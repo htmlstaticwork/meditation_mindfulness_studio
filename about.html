@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Serenity Studio</title>
+  <meta name="description" content="Learn about our mission, meditation philosophy, and the expert instructors guiding your practice.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231F4D3B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z'/><path d='M2 22 12 12'/></svg>">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i data-lucide="leaf"></i>
+        <span>Studio</span>
+      </a>
+      
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="dashboard.html">Dashboard</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline" style="padding: 0.5rem 1rem;">Login</a>
+        <a href="signup.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Sign Up</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+          <i data-lucide="moon"></i>
+        </button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: 80px;">
+    <!-- Section 1: Studio Mission -->
+    <section class="container" style="text-align: center; padding: var(--space-xl) 0;">
+      <div class="badge">Our Mission</div>
+      <h1 style="max-width: 800px; margin: 1rem auto var(--space-md);">Creating a Digital Sanctuary for the Modern Mind.</h1>
+      <p style="max-width: 700px; margin: 0 auto; font-size: 1.25rem;">We exist to democratize inner peace. By combining ancient contemplative traditions with modern science, Serenity Studio provides accessible, premium mindfulness tools for navigating an increasingly complex world.</p>
+    </section>
+
+    <!-- Section 2: Our Meditation Philosophy -->
+    <section style="background-color: var(--color-surface-alt);">
+      <div class="container">
+        <div class="grid grid-cols-2 items-center gap-lg">
+          <div>
+            <img src="assets/images/card.png" alt="Meditation Philosophy" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+          </div>
+          <div>
+            <h2>Rooted in Tradition, Designed for Today</h2>
+            <p>Our philosophy is built on three core pillars:</p>
+            <ul style="margin: 2rem 0; display: flex; flex-direction: column; gap: 1.5rem;">
+              <li class="flex gap-sm">
+                <i data-lucide="circle-dot" style="color: var(--color-primary); margin-top: 0.25rem; flex-shrink: 0;"></i>
+                <div>
+                  <h4 style="margin-bottom: 0.25rem;">Secular & Scientific</h4>
+                  <p style="font-size: 0.875rem; margin-bottom: 0;">Practices backed by neuroscience to ensure tangible benefits for stress, focus, and emotional regulation.</p>
+                </div>
+              </li>
+              <li class="flex gap-sm">
+                <i data-lucide="circle-dot" style="color: var(--color-primary); margin-top: 0.25rem; flex-shrink: 0;"></i>
+                <div>
+                  <h4 style="margin-bottom: 0.25rem;">Accessible Excellence</h4>
+                  <p style="font-size: 0.875rem; margin-bottom: 0;">No esoteric jargon. Just clear, high-quality guidance suitable for absolute beginners and seasoned practitioners alike.</p>
+                </div>
+              </li>
+              <li class="flex gap-sm">
+                <i data-lucide="circle-dot" style="color: var(--color-primary); margin-top: 0.25rem; flex-shrink: 0;"></i>
+                <div>
+                  <h4 style="margin-bottom: 0.25rem;">Holistic Integration</h4>
+                  <p style="font-size: 0.875rem; margin-bottom: 0;">We believe meditation isn't an escape from life, but a tool to engage with life more fully and authentically.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Instructor Profiles -->
+    <section class="container">
+      <div class="section-header">
+        <h2>Meet Mindful Masters</h2>
+        <p>Learn from teachers with decades of dedicated practice across various traditions.</p>
+      </div>
+      
+      <div class="grid grid-cols-3">
+        <div class="card" style="text-align: center;">
+          <div style="width: 120px; height: 120px; border-radius: 50%; overflow: hidden; margin: 0 auto 1.5rem; border: 4px solid var(--color-surface-alt);">
+            <img src="assets/images/hero.png" alt="Sarah Jenkins" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <h3>Sarah Jenkins</h3>
+          <p style="font-size: 0.875rem; color: var(--color-primary); font-weight: 500;">Vipassana & MBSR Teacher</p>
+          <p style="font-size: 0.875rem;">Known for her grounding voice and practical approach to dissolving daily anxiety.</p>
+        </div>
+        <div class="card" style="text-align: center;">
+          <div style="width: 120px; height: 120px; border-radius: 50%; overflow: hidden; margin: 0 auto 1.5rem; border: 4px solid var(--color-surface-alt);">
+            <img src="assets/images/card.png" alt="David Chen" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <h3>David Chen</h3>
+          <p style="font-size: 0.875rem; color: var(--color-primary); font-weight: 500;">Zen Practitioner & Psychologist</p>
+          <p style="font-size: 0.875rem;">Specializes in cognitive emotional regulation through deep stillness practices.</p>
+        </div>
+        <div class="card" style="text-align: center;">
+          <div style="width: 120px; height: 120px; border-radius: 50%; overflow: hidden; margin: 0 auto 1.5rem; border: 4px solid var(--color-surface-alt);">
+            <img src="assets/images/hero.png" alt="Elena Rodriguez" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <h3>Elena Rodriguez</h3>
+          <p style="font-size: 0.875rem; color: var(--color-primary); font-weight: 500;">Yoga Nidra Expert</p>
+          <p style="font-size: 0.875rem;">Guiding members into profound states of conscious relaxation and deep sleep.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Join Our Journey -->
+    <section style="background-color: var(--color-primary); color: white; text-align: center; padding: var(--space-xl) 0;">
+      <div class="container">
+        <h2 style="color: white; margin-bottom: 1rem;">Begin Your Journey Inward</h2>
+        <p style="max-width: 600px; margin: 0 auto 2rem; color: rgba(255,255,255,0.8);">Join thousands of members discovering peace, focus, and better sleep through our premium guided meditations.</p>
+        <a href="signup.html" class="btn" style="background-color: var(--color-surface); color: var(--color-primary); font-size: 1.125rem;">Start 14-Day Free Trial</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <i data-lucide="leaf"></i>
+            <span>Studio</span>
+          </a>
+          <p style="max-width: 300px;">Creating digital sanctuaries for mindful living. Find your peace in the present moment.</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="dashboard.html">Dashboard</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Resources</h4>
+          <div class="footer-links">
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Support / FAQ</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Newsletter</h4>
+          <p style="font-size: 0.875rem;">Gentle reminders and wellness insights sent weekly.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault();">
+            <input type="email" placeholder="Email address" class="newsletter-input" required>
+            <button type="submit" class="btn btn-primary" aria-label="Subscribe"><i data-lucide="send" style="width: 16px; height: 16px;"></i></button>
+          </form>
+          
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram" style="width: 20px;"></i></a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter" style="width: 20px;"></i></a>
+            <a href="#" aria-label="YouTube"><i data-lucide="youtube" style="width: 20px;"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Serenity Studio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

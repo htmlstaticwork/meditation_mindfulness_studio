@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Meditation Programs | Serenity Studio</title>
+  <meta name="description" content="Join our premium guided live meditation sessions and comprehensive mindfulness programs for holistic well-being.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231F4D3B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z'/><path d='M2 22 12 12'/></svg>">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    /* Specific styles for Home 2 Premium Hero */
+    .hero-premium {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    
+    .hero-video-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+      filter: brightness(0.6);
+    }
+    
+    .hero-premium-content {
+      position: relative;
+      z-index: 10;
+      max-width: 800px;
+      padding: 0 var(--space-md);
+    }
+    
+    .hero-premium-content h1 {
+      color: white;
+    }
+
+    .hero-premium-content p {
+      color: rgba(255,255,255,0.9);
+      font-size: 1.25rem;
+    }
+
+    .play-btn-large {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: rgba(255,255,255,0.2);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2rem;
+      border: 2px solid white;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      color: white;
+    }
+
+    .play-btn-large:hover {
+      background-color: var(--color-primary);
+      border-color: var(--color-primary);
+      transform: scale(1.1);
+    }
+    
+    .program-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-lg);
+      aspect-ratio: 3/4;
+    }
+    
+    .program-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s ease;
+    }
+
+    .program-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .program-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: var(--space-lg) var(--space-md) var(--space-md);
+      background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+      color: white;
+    }
+
+    .program-content h3 { color: white; margin-bottom: 0.5rem; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header" style="background-color: transparent; border-bottom: none;">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" style="color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
+        <i data-lucide="leaf"></i>
+        <span>Studio</span>
+      </a>
+      
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" style="color: white;">Home</a>
+        <a href="about.html" style="color: white;">About</a>
+        <a href="services.html" style="color: white;">Services</a>
+        <a href="blog.html" style="color: white;">Blog</a>
+        <a href="contact.html" style="color: white;">Contact</a>
+        <a href="dashboard.html" style="color: white;">Dashboard</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline" style="color: white; border-color: white; padding: 0.5rem 1rem;">Login</a>
+        <a href="signup.html" class="btn btn-primary" style="background-color: white; color: var(--color-primary); padding: 0.5rem 1rem;">Sign Up</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode" style="color: white;">
+          <i data-lucide="moon"></i>
+        </button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Menu" style="color: white;">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section 1: Premium Hero with Video Background -->
+    <section class="hero-premium">
+      <img src="assets/images/hero.png" alt="Meditation Video Background" class="hero-video-bg">
+      <div class="hero-premium-content">
+        <div class="play-btn-large">
+          <i data-lucide="play" style="width: 32px; height: 32px; fill: white; margin-left: 5px;"></i>
+        </div>
+        <h1>Elevate Your Consciousness</h1>
+        <p style="margin-bottom: 2rem;">Join master teachers for live guided sessions and comprehensive mindfulness programs designed to awaken your inner potential.</p>
+        <a href="signup.html" class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 2rem;">Begin Your Practice</a>
+      </div>
+    </section>
+
+    <!-- Section 2: Meditation Programs -->
+    <section class="container" style="padding-top: var(--space-xl);">
+      <div class="section-header">
+        <h2>Expertly Crafted Programs</h2>
+        <p>Structured paths to deep relaxation, emotional balance, and spiritual growth.</p>
+      </div>
+      
+      <div class="grid grid-cols-3">
+        <a href="services.html" class="program-card">
+          <img src="assets/images/card.png" alt="21 Days of Calm">
+          <div class="program-content">
+            <span class="badge" style="background: rgba(255,255,255,0.2); color: white; backdrop-filter: blur(4px);">Beginner</span>
+            <h3>21 Days of Calm</h3>
+            <p style="color: rgba(255,255,255,0.8); font-size: 0.875rem; margin-bottom: 0;">Build a lasting daily habit step-by-step.</p>
+          </div>
+        </a>
+        <a href="services.html" class="program-card">
+          <img src="assets/images/hero.png" alt="Mastering Anxiety">
+          <div class="program-content">
+            <span class="badge" style="background: rgba(255,255,255,0.2); color: white; backdrop-filter: blur(4px);">Intermediate</span>
+            <h3>Mastering Anxiety</h3>
+            <p style="color: rgba(255,255,255,0.8); font-size: 0.875rem; margin-bottom: 0;">Techniques for grounding the nervous system.</p>
+          </div>
+        </a>
+        <a href="services.html" class="program-card">
+          <img src="assets/images/card.png" alt="Deep Sleep Restoration">
+          <div class="program-content">
+            <span class="badge" style="background: rgba(255,255,255,0.2); color: white; backdrop-filter: blur(4px);">All Levels</span>
+            <h3>Deep Sleep Restoration</h3>
+            <p style="color: rgba(255,255,255,0.8); font-size: 0.875rem; margin-bottom: 0;">Yoga Nidra practices for profound rest.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Section 3: Daily Mindfulness Practice -->
+    <section style="background-color: var(--color-surface-alt);">
+      <div class="container">
+        <div class="grid grid-cols-2 items-center gap-lg">
+          <div>
+            <h2 style="margin-bottom: var(--space-md);">Your Daily Mindfulness Ritual</h2>
+            <p>We've designed a platform that seamlessly integrates into your busy life. Whether you have 5 minutes between meetings or an hour on Sunday morning, there is a practice waiting for you.</p>
+            
+            <ul style="margin: 2rem 0; display: flex; flex-direction: column; gap: 1.5rem;">
+              <li class="flex gap-sm">
+                <div style="background-color: var(--color-primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  <i data-lucide="sun"></i>
+                </div>
+                <div>
+                  <h4 style="margin-bottom: 0.25rem;">Morning Intentions</h4>
+                  <p style="font-size: 0.875rem; margin-bottom: 0;">Start the day with purpose and clarity.</p>
+                </div>
+              </li>
+              <li class="flex gap-sm">
+                <div style="background-color: var(--color-primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  <i data-lucide="coffee"></i>
+                </div>
+                <div>
+                  <h4 style="margin-bottom: 0.25rem;">Midday Resets</h4>
+                  <p style="font-size: 0.875rem; margin-bottom: 0;">Quick 5-minute breathing spaces.</p>
+                </div>
+              </li>
+              <li class="flex gap-sm">
+                <div style="background-color: var(--color-primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  <i data-lucide="moon"></i>
+                </div>
+                <div>
+                  <h4 style="margin-bottom: 0.25rem;">Evening Wind Down</h4>
+                  <p style="font-size: 0.875rem; margin-bottom: 0;">Release the day's tension for better sleep.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div style="position: relative;">
+            <img src="assets/images/card.png" alt="Daily Practice" style="border-radius: var(--radius-lg); aspect-ratio: 4/5; object-fit: cover; box-shadow: var(--shadow-lg);">
+            <div class="card" style="position: absolute; bottom: -30px; left: -30px; width: 250px; padding: 1.5rem;">
+              <div class="flex items-center gap-sm" style="margin-bottom: 0.5rem;">
+                <i data-lucide="flame" style="color: #F59E0B;"></i>
+                <span style="font-weight: 600; color: var(--color-text);">14 Day Streak</span>
+              </div>
+              <p style="font-size: 0.875rem; margin-bottom: 0;">You're doing great! Keep building your habit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Live Meditation Sessions -->
+    <section class="container">
+      <div class="flex justify-between items-center" style="margin-bottom: var(--space-lg);">
+        <div>
+          <h2>Live Global Sessions</h2>
+          <p style="margin-bottom: 0;">Connect with our community and masters in real-time.</p>
+        </div>
+        <a href="services.html" class="btn btn-outline">View Schedule</a>
+      </div>
+      
+      <div class="card p-0" style="overflow: hidden;">
+        <div class="grid grid-cols-4" style="gap: 0; align-items: center;">
+          <div style="padding: var(--space-md); border-right: 1px solid var(--color-border); text-align: center;">
+            <div style="color: var(--color-primary); font-weight: 600; font-size: 1.25rem;">OCT 24</div>
+            <div style="font-size: 0.875rem; color: var(--color-text-muted);">8:00 AM EST</div>
+          </div>
+          <div style="padding: var(--space-md); border-right: 1px solid var(--color-border); grid-column: span 2;">
+            <h4 style="margin-bottom: 0.25rem;">Awakening Compassion (Live Audio)</h4>
+            <p style="font-size: 0.875rem; margin-bottom: 0;">With Master Instructor Sarah Jenkins</p>
+          </div>
+          <div style="padding: var(--space-md); text-align: center;">
+            <a href="dashboard.html" class="btn btn-primary" style="padding: 0.5rem 1.5rem;">RSVP</a>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-4" style="gap: 0; align-items: center; border-top: 1px solid var(--color-border);">
+          <div style="padding: var(--space-md); border-right: 1px solid var(--color-border); text-align: center;">
+            <div style="color: var(--color-primary); font-weight: 600; font-size: 1.25rem;">OCT 25</div>
+            <div style="font-size: 0.875rem; color: var(--color-text-muted);">7:00 PM EST</div>
+          </div>
+          <div style="padding: var(--space-md); border-right: 1px solid var(--color-border); grid-column: span 2;">
+            <h4 style="margin-bottom: 0.25rem;">Sound Bath & Yoga Nidra (Live Video)</h4>
+            <p style="font-size: 0.875rem; margin-bottom: 0;">With Master Instructor David Chen</p>
+          </div>
+          <div style="padding: var(--space-md); text-align: center;">
+            <a href="dashboard.html" class="btn btn-primary" style="padding: 0.5rem 1.5rem;">RSVP</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Community & Reviews -->
+    <section style="background-color: var(--color-primary); color: white; text-align: center;">
+      <div class="container">
+        <i data-lucide="quote" style="width: 48px; height: 48px; fill: rgba(255,255,255,0.2); margin: 0 auto 1.5rem; display: block;"></i>
+        <h2 style="color: white; font-weight: 300; font-size: clamp(1.5rem, 3vw, 2.5rem); max-width: 800px; margin: 0 auto 2rem; line-height: 1.4;">"The premium live sessions bring the studio experience straight into my living room. I feel deeply connected to the instructors and the community, even from thousands of miles away."</h2>
+        <div style="font-weight: 600; font-size: 1.125rem;">Samantha W.</div>
+        <div style="color: rgba(255,255,255,0.7); font-size: 0.875rem;">Premium Member, New York</div>
+        
+        <div class="flex justify-center gap-sm" style="margin-top: 3rem;">
+          <div style="width: 12px; height: 12px; border-radius: 50%; background-color: white;"></div>
+          <div style="width: 12px; height: 12px; border-radius: 50%; background-color: rgba(255,255,255,0.3);"></div>
+          <div style="width: 12px; height: 12px; border-radius: 50%; background-color: rgba(255,255,255,0.3);"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Membership Plans -->
+    <section class="container" style="padding-bottom: var(--space-xl);">
+      <div class="section-header">
+        <h2>Premium Wellness Memberships</h2>
+        <p>Choose the level of guidance that matches your journey.</p>
+      </div>
+      
+      <div class="grid grid-cols-2" style="max-width: 900px; margin: 0 auto;">
+          <div class="card" style="padding: var(--space-lg); border: 2px solid var(--color-border);">
+            <h3>Essential Access</h3>
+            <div style="font-size: 3rem; font-weight: 700; color: var(--color-text); margin: 1rem 0;">$14<span style="font-size: 1.125rem; font-weight: 400; color: var(--color-text-muted);">/mo</span></div>
+            <p>Self-guided practice at your own pace.</p>
+            <ul style="margin: 2rem 0; display: flex; flex-direction: column; gap: 1rem;">
+              <li class="flex items-center gap-sm"><i data-lucide="check" style="color: var(--color-primary);"></i> 500+ Guided Meditations</li>
+              <li class="flex items-center gap-sm"><i data-lucide="check" style="color: var(--color-primary);"></i> Sleep Stories & Soundscapes</li>
+              <li class="flex items-center gap-sm"><i data-lucide="check" style="color: var(--color-primary);"></i> Daily Mindfulness Tips</li>
+            </ul>
+            <a href="signup.html" class="btn btn-outline" style="width: 100%;">Choose Essential</a>
+          </div>
+          
+          <div class="card" style="padding: var(--space-lg); background-color: var(--color-surface); border: 2px solid var(--color-primary); position: relative; box-shadow: var(--shadow-xl);">
+            <div class="badge" style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background-color: var(--color-primary); color: white;">Premium Experience</div>
+            <h3>All Access + Live</h3>
+            <div style="font-size: 3rem; font-weight: 700; margin: 1rem 0; color: var(--color-text);">$29<span style="font-size: 1.125rem; font-weight: 400; color: var(--color-text-muted);">/mo</span></div>
+            <p>The ultimate holistic wellness membership.</p>
+            <ul style="margin: 2rem 0; display: flex; flex-direction: column; gap: 1rem;">
+              <li class="flex items-center gap-sm"><i data-lucide="check" style="color: var(--color-primary);"></i> All Essential Features</li>
+              <li class="flex items-center gap-sm"><i data-lucide="check" style="color: var(--color-primary);"></i> Unlimited Live Sessions Check-ins</li>
+              <li class="flex items-center gap-sm"><i data-lucide="check" style="color: var(--color-primary);"></i> 4-Week Structured Mastery Programs</li>
+              <li class="flex items-center gap-sm"><i data-lucide="check" style="color: var(--color-primary);"></i> 1-on-1 Monthly Instructor Guidance</li>
+            </ul>
+            <a href="signup.html" class="btn btn-primary" style="width: 100%;">Choose Premium</a>
+          </div>
+        </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <i data-lucide="leaf"></i>
+            <span>Studio</span>
+          </a>
+          <p style="max-width: 300px;">Creating digital sanctuaries for mindful living. Find your peace in the present moment.</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="dashboard.html">Dashboard</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Resources</h4>
+          <div class="footer-links">
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Support / FAQ</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Newsletter</h4>
+          <p style="font-size: 0.875rem;">Gentle reminders and wellness insights sent weekly.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault();">
+            <input type="email" placeholder="Email address" class="newsletter-input" required>
+            <button type="submit" class="btn btn-primary" aria-label="Subscribe"><i data-lucide="send" style="width: 16px; height: 16px;"></i></button>
+          </form>
+          
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram" style="width: 20px;"></i></a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter" style="width: 20px;"></i></a>
+            <a href="#" aria-label="YouTube"><i data-lucide="youtube" style="width: 20px;"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Serenity Studio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Specific script to handle header style on scroll for transparent hero
+    const pHeader = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) {
+        pHeader.style.backgroundColor = document.documentElement.getAttribute('data-theme') === 'dark' ? 'rgba(18, 22, 20, 0.95)' : 'rgba(253, 252, 249, 0.95)';
+        pHeader.querySelectorAll('.logo, .nav-links a, .theme-toggle, .mobile-menu-btn').forEach(el => {
+          el.style.color = document.documentElement.getAttribute('data-theme') === 'dark' ? '#F5F1E8' : '#1a201d';
+          // fix logo icon text shadow
+          if(el.classList.contains('logo')) el.style.textShadow = 'none';
+        });
+        pHeader.style.borderBottom = '1px solid var(--color-border)';
+      } else {
+        pHeader.style.backgroundColor = 'transparent';
+        pHeader.querySelectorAll('.logo, .nav-links a, .theme-toggle, .mobile-menu-btn').forEach(el => {
+          el.style.color = 'white';
+          if(el.classList.contains('logo')) el.style.textShadow = '0 2px 4px rgba(0,0,0,0.3)';
+        });
+        pHeader.style.borderBottom = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog & Insights | Serenity Studio</title>
+  <meta name="description" content="Discover mindfulness articles, meditation techniques, stress management tips, and holistic wellness insights.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231F4D3B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z'/><path d='M2 22 12 12'/></svg>">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i data-lucide="leaf"></i>
+        <span>Studio</span>
+      </a>
+      
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="dashboard.html">Dashboard</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline" style="padding: 0.5rem 1rem;">Login</a>
+        <a href="signup.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Sign Up</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+          <i data-lucide="moon"></i>
+        </button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: 80px;">
+    <!-- Intro Header -->
+    <div class="container" style="text-align: center; padding: var(--space-xl) 0 var(--space-md);">
+      <h1 style="max-width: 800px; margin: 0 auto var(--space-sm);">The Mindful Journal</h1>
+      <p style="max-width: 600px; margin: 0 auto;">Explorations of consciousness, practical psychology, and the art of living fully in the present moment.</p>
+    </div>
+
+    <!-- Section 1: Mindfulness Articles -->
+    <section class="container" style="padding-bottom: var(--space-xl);">
+      <div class="flex justify-between items-center" style="margin-bottom: var(--space-lg);">
+        <div>
+           <h2>Mindfulness Articles</h2>
+           <p style="margin-bottom: 0;">Deep dives into the science and philosophy of awareness.</p>
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-2 gap-lg">
+        <article class="card p-0" style="overflow: hidden;">
+          <div style="aspect-ratio: 16/9; background-color: var(--color-surface-alt);">
+            <img src="assets/images/hero.png" alt="Neuroplasticity" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="padding: 1.5rem;">
+            <div class="flex items-center gap-sm" style="font-size: 0.875rem; color: var(--color-primary); margin-bottom: 0.5rem; font-weight: 500;">
+              <span>Science</span> • <span>5 min read</span>
+            </div>
+            <h3>How Meditation literally changes the shape of your brain</h3>
+            <p style="margin-bottom: 1.5rem; font-size: 0.875rem;">Exploring the latest fMRI studies showing increased gray matter in long-term practitioners.</p>
+            <a href="#" style="color: var(--color-text); font-weight: 600; text-decoration: underline;">Read Full Article</a>
+          </div>
+        </article>
+        
+        <article class="card p-0" style="overflow: hidden;">
+          <div style="aspect-ratio: 16/9; background-color: var(--color-surface-alt);">
+            <img src="assets/images/card.png" alt="Digital Minimalism" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="padding: 1.5rem;">
+            <div class="flex items-center gap-sm" style="font-size: 0.875rem; color: var(--color-primary); margin-bottom: 0.5rem; font-weight: 500;">
+              <span>Philosophy</span> • <span>7 min read</span>
+            </div>
+            <h3>Digital Minimalism in an Age of Infinite Distraction</h3>
+            <p style="margin-bottom: 1.5rem; font-size: 0.875rem;">Strategies for creating a healthy relationship with your devices without going completely off-grid.</p>
+            <a href="#" style="color: var(--color-text); font-weight: 600; text-decoration: underline;">Read Full Article</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section 2: Meditation Techniques -->
+    <section style="background-color: var(--color-surface-alt);">
+      <div class="container" style="padding: var(--space-xl) 0;">
+        <div class="section-header">
+          <h2>Mastering Techniques</h2>
+          <p>Step-by-step guides to various mindfulness modalities from around the world.</p>
+        </div>
+        
+        <div class="grid grid-cols-3">
+          <div class="card" style="padding: 2rem;">
+            <div style="width: 48px; height: 48px; border-radius: 50%; background-color: rgba(31, 77, 59, 0.1); color: var(--color-primary); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+               <i data-lucide="waves" style="width: 24px; height: 24px;"></i>
+            </div>
+            <h3>Box Breathing</h3>
+            <p style="font-size: 0.875rem;">The Navy SEAL technique for immediate autonomic nervous system resetting before high-stress situations.</p>
+            <a href="#" style="color: var(--color-primary); font-weight: 500; font-size: 0.875rem;">Explore Guide &rarr;</a>
+          </div>
+          <div class="card" style="padding: 2rem;">
+            <div style="width: 48px; height: 48px; border-radius: 50%; background-color: rgba(31, 77, 59, 0.1); color: var(--color-primary); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+               <i data-lucide="heart" style="width: 24px; height: 24px;"></i>
+            </div>
+            <h3>Metta (Loving-Kindness)</h3>
+            <p style="font-size: 0.875rem;">A Buddhist practice focused on cultivating unconditional compassion toward oneself and others.</p>
+            <a href="#" style="color: var(--color-primary); font-weight: 500; font-size: 0.875rem;">Explore Guide &rarr;</a>
+          </div>
+          <div class="card" style="padding: 2rem;">
+            <div style="width: 48px; height: 48px; border-radius: 50%; background-color: rgba(31, 77, 59, 0.1); color: var(--color-primary); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+               <i data-lucide="move" style="width: 24px; height: 24px;"></i>
+            </div>
+            <h3>Body Scanning</h3>
+            <p style="font-size: 0.875rem;">Systematically moving awareness through the physical body to release trapped emotional tension.</p>
+            <a href="#" style="color: var(--color-primary); font-weight: 500; font-size: 0.875rem;">Explore Guide &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Stress Management Tips -->
+    <section class="container" style="padding: var(--space-xl) 0;">
+      <div class="grid grid-cols-2 items-center gap-lg">
+        <div>
+          <img src="assets/images/card.png" alt="Stress Management" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+        </div>
+        <div>
+          <div class="badge">Everyday Practicality</div>
+          <h2 style="margin-bottom: var(--space-md);">Stress Management Tips</h2>
+          <p>Quick bites of clinical wisdom you can apply instantly.</p>
+          <ul style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+            <li class="card" style="padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-weight: 500;">The 2-Minute Rule for Inbox Anxiety</span>
+              <a href="#" style="color: var(--color-primary);"><i data-lucide="chevron-right"></i></a>
+            </li>
+            <li class="card" style="padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-weight: 500;">Setting Boundaries in Remote Work</span>
+              <a href="#" style="color: var(--color-primary);"><i data-lucide="chevron-right"></i></a>
+            </li>
+            <li class="card" style="padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-weight: 500;">Nutrition's role in Cortisol Levels</span>
+              <a href="#" style="color: var(--color-primary);"><i data-lucide="chevron-right"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Wellness Insights -->
+    <section style="background-color: var(--color-primary); color: white; padding: var(--space-xl) 0;">
+      <div class="container text-center">
+        <h2 style="color: white; margin-bottom: 1.5rem;">Holistic Wellness Insights</h2>
+        <p style="max-width: 600px; margin: 0 auto 2.5rem; color: rgba(255,255,255,0.8); font-size: 1.125rem;">Subscribe to our weekly newsletter for curated essays on sleep hygiene, emotional intelligence, and living beautifully.</p>
+        
+        <form class="flex justify-center gap-sm" style="max-width: 500px; margin: 0 auto;" onsubmit="event.preventDefault();">
+          <input type="email" placeholder="Enter your email address" style="flex: 1; padding: 1rem; border-radius: var(--radius-full); border: none; font-family: var(--font-base);" required>
+          <button type="submit" class="btn" style="background-color: var(--color-surface); color: var(--color-primary);">Join 50k+ Readers</button>
+        </form>
+        <p style="font-size: 0.75rem; color: rgba(255,255,255,0.6); margin-top: 1rem;">No spam. Unsubscribe anytime.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <i data-lucide="leaf"></i>
+            <span>Studio</span>
+          </a>
+          <p style="max-width: 300px;">Creating digital sanctuaries for mindful living. Find your peace in the present moment.</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="dashboard.html">Dashboard</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Resources</h4>
+          <div class="footer-links">
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Support / FAQ</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Newsletter</h4>
+          <p style="font-size: 0.875rem;">Gentle reminders and wellness insights sent weekly.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault();">
+            <input type="email" placeholder="Email address" class="newsletter-input" required>
+            <button type="submit" class="btn btn-primary" aria-label="Subscribe"><i data-lucide="send" style="width: 16px; height: 16px;"></i></button>
+          </form>
+          
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram" style="width: 20px;"></i></a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter" style="width: 20px;"></i></a>
+            <a href="#" aria-label="YouTube"><i data-lucide="youtube" style="width: 20px;"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Serenity Studio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

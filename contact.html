@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Serenity Studio</title>
+  <meta name="description" content="Get in touch with Serenity Studio. Contact form, location map, and FAQ support for your meditation journey.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231F4D3B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z'/><path d='M2 22 12 12'/></svg>">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i data-lucide="leaf"></i>
+        <span>Studio</span>
+      </a>
+      
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="dashboard.html">Dashboard</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline" style="padding: 0.5rem 1rem;">Login</a>
+        <a href="signup.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Sign Up</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+          <i data-lucide="moon"></i>
+        </button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: 80px;">
+    <!-- Intro Header -->
+    <div class="container" style="text-align: center; padding: var(--space-xl) 0 var(--space-md);">
+      <h1 style="max-width: 800px; margin: 0 auto var(--space-sm);">We're Here to Listen</h1>
+      <p style="max-width: 600px; margin: 0 auto;">Reach out for support, membership queries, or to inquire about our corporate wellness programs.</p>
+    </div>
+
+    <!-- Contact Container for Section 1 & 2 -->
+    <section class="container" style="padding-bottom: var(--space-xl);">
+      <div class="grid grid-cols-2 gap-lg">
+        
+        <!-- Section 1: Contact Information -->
+        <div style="background-color: var(--color-primary); color: white; padding: var(--space-lg); border-radius: var(--radius-lg); display: flex; flex-direction: column;">
+          <h2 style="color: white; margin-bottom: 2rem;">Get in Touch</h2>
+          
+          <div class="flex flex-col gap-lg" style="flex: 1;">
+            <div class="flex items-start gap-sm">
+              <div style="width: 48px; height: 48px; border-radius: 50%; background-color: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i data-lucide="mail" style="color: white; width: 24px; height: 24px;"></i>
+              </div>
+              <div>
+                <h4 style="color: white; margin-bottom: 0.25rem;">Email Support</h4>
+                <p style="font-size: 0.875rem; color: rgba(255,255,255,0.8); margin-bottom: 0.25rem;">Our team responds within 24 hours.</p>
+                <a href="mailto:hello@serenitystudio.com" style="color: white; font-weight: 500;">hello@serenitystudio.com</a>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-sm">
+              <div style="width: 48px; height: 48px; border-radius: 50%; background-color: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i data-lucide="phone" style="color: white; width: 24px; height: 24px;"></i>
+              </div>
+              <div>
+                <h4 style="color: white; margin-bottom: 0.25rem;">Phone Number</h4>
+                <p style="font-size: 0.875rem; color: rgba(255,255,255,0.8); margin-bottom: 0.25rem;">Mon - Fri, 9am - 5pm EST.</p>
+                <a href="tel:+18005550199" style="color: white; font-weight: 500;">+1 (800) 555-0199</a>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-sm">
+              <div style="width: 48px; height: 48px; border-radius: 50%; background-color: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i data-lucide="map-pin" style="color: white; width: 24px; height: 24px;"></i>
+              </div>
+              <div>
+                <h4 style="color: white; margin-bottom: 0.25rem;">Physical Studio</h4>
+                <p style="font-size: 0.875rem; color: rgba(255,255,255,0.8); margin-bottom: 0;">For live classes (when available)<br>124 Mindfulness Way<br>Portland, OR 97204</p>
+              </div>
+            </div>
+          </div>
+          
+          <div style="margin-top: 2rem;">
+            <p style="font-size: 0.875rem; color: rgba(255,255,255,0.8); margin-bottom: 0.5rem;">Connect with us</p>
+            <div class="flex gap-sm">
+              <a href="#" style="color: white;"><i data-lucide="instagram"></i></a>
+              <a href="#" style="color: white;"><i data-lucide="twitter"></i></a>
+              <a href="#" style="color: white;"><i data-lucide="linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Section 2: Send Message Form -->
+        <div style="background-color: var(--color-surface); padding: var(--space-lg); border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm);">
+          <h2 style="margin-bottom: 1.5rem;">Send a Message</h2>
+          <form class="flex flex-col gap-sm" onsubmit="event.preventDefault();">
+            <div class="grid grid-cols-2" style="margin-bottom: 0;">
+              <div>
+                <label class="form-label" for="firstName">First Name</label>
+                <input type="text" id="firstName" class="form-input" required>
+              </div>
+              <div>
+                <label class="form-label" for="lastName">Last Name</label>
+                <input type="text" id="lastName" class="form-input">
+              </div>
+            </div>
+            <div style="margin-bottom: 0;">
+              <label class="form-label" for="email">Email Address</label>
+              <input type="email" id="email" class="form-input" required>
+            </div>
+            <div style="margin-bottom: 0;">
+              <label class="form-label" for="subject">Subject</label>
+              <select id="subject" class="form-input" required>
+                <option value="">Select a topic...</option>
+                <option value="membership">Membership Support</option>
+                <option value="corporate">Corporate Wellness</option>
+                <option value="technical">Technical Issue</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div style="margin-bottom: 0;">
+              <label class="form-label" for="message">Message</label>
+              <textarea id="message" class="form-input" style="min-height: 120px; resize: vertical;" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="margin-top: 1rem; width: 100%;">Send Message</button>
+          </form>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Section 3: Studio Location Map -->
+    <section style="background-color: var(--color-surface-alt);">
+      <div class="container" style="padding: var(--space-xl) 0;">
+        <div class="section-header">
+          <h2>Find Us in Portland</h2>
+          <p>Our hybrid approach means you can practice from anywhere, but our flagship recording studio is rooted in the Pacific Northwest.</p>
+        </div>
+        
+        <!-- Minimalist Map Concept (using image placeholder) -->
+        <div class="card p-0" style="overflow: hidden; border-radius: var(--radius-lg);">
+          <div style="width: 100%; height: 400px; background-color: #e5e5e5; display: flex; align-items: center; justify-content: center; position: relative;">
+            <img src="assets/images/hero.png" alt="Map View" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8; filter: grayscale(100%) contrast(1.2);">
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center;">
+              <div style="width: 40px; height: 40px; background-color: var(--color-primary); border-radius: 50% 50% 50% 0; transform: rotate(-45deg); display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-md);">
+                <div style="width: 16px; height: 16px; background-color: white; border-radius: 50%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Support & FAQ -->
+    <section class="container" style="padding: var(--space-xl) 0;">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Quick answers to common questions about our platform.</p>
+      </div>
+      
+      <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem;">
+        <!-- FAQ Items -->
+        <div class="card" style="padding: 1.5rem; border: 1px solid var(--color-border); border-radius: var(--radius-md);">
+          <h4 style="margin-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+            How do I cancel my subscription?
+            <i data-lucide="chevron-down" style="color: var(--color-primary);"></i>
+          </h4>
+          <p style="font-size: 0.875rem; margin-bottom: 0; color: var(--color-text-muted);">You can manage or cancel your subscription anytime from the 'Billing' section of your Dashboard. There are no cancellation fees.</p>
+        </div>
+        
+        <div class="card" style="padding: 1.5rem; border: 1px solid var(--color-border); border-radius: var(--radius-md);">
+          <h4 style="margin-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+            Do I need any special equipment?
+            <i data-lucide="chevron-down" style="color: var(--color-primary);"></i>
+          </h4>
+          <p style="font-size: 0.875rem; margin-bottom: 0; color: var(--color-text-muted);">Not at all. A quiet space and a comfortable place to sit (a chair works perfectly) are all you need. We recommend headphones for the best audio experience.</p>
+        </div>
+        
+        <div class="card" style="padding: 1.5rem; border: 1px solid var(--color-border); border-radius: var(--radius-md);">
+          <h4 style="margin-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+            Are the live sessions recorded?
+            <i data-lucide="chevron-down" style="color: var(--color-primary);"></i>
+          </h4>
+          <p style="font-size: 0.875rem; margin-bottom: 0; color: var(--color-text-muted);">Yes, all live sessions are recorded and uploaded to the 'Featured Sessions' section of the Portfolio within 24 hours for Premium members.</p>
+        </div>
+      </div>
+      
+      <div class="text-center" style="margin-top: 3rem;">
+        <p>Still need help? <a href="#" style="color: var(--color-primary); font-weight: 500; text-decoration: underline;">Visit our comprehensive Help Center.</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <i data-lucide="leaf"></i>
+            <span>Studio</span>
+          </a>
+          <p style="max-width: 300px;">Creating digital sanctuaries for mindful living. Find your peace in the present moment.</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="dashboard.html">Dashboard</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Resources</h4>
+          <div class="footer-links">
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Support / FAQ</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Newsletter</h4>
+          <p style="font-size: 0.875rem;">Gentle reminders and wellness insights sent weekly.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault();">
+            <input type="email" placeholder="Email address" class="newsletter-input" required>
+            <button type="submit" class="btn btn-primary" aria-label="Subscribe"><i data-lucide="send" style="width: 16px; height: 16px;"></i></button>
+          </form>
+          
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram" style="width: 20px;"></i></a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter" style="width: 20px;"></i></a>
+            <a href="#" aria-label="YouTube"><i data-lucide="youtube" style="width: 20px;"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Serenity Studio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meditation & Mindfulness Studio | Home</title>
+  <meta name="description" content="Discover your digital sanctuary. Premium guided meditation and mindfulness sessions for your daily wellness journey.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Lucide Icons -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231F4D3B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z'/><path d='M2 22 12 12'/></svg>">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i data-lucide="leaf"></i>
+        <span>Studio</span>
+      </a>
+      
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="dashboard.html">Dashboard</a>
+        
+        <div class="nav-actions mobile-visible">
+          <a href="login.html" class="btn btn-outline" style="margin-bottom: 0.5rem; width: 100%;">Login</a>
+          <a href="signup.html" class="btn btn-primary" style="width: 100%;">Sign Up</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline" style="padding: 0.5rem 1rem;">Login</a>
+        <a href="signup.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Sign Up</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+          <i data-lucide="moon"></i>
+        </button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section 1: Hero -->
+    <section class="hero">
+      <img src="assets/images/hero.png" alt="Serene meditation studio" class="hero-bg">
+      <div class="container relative z-10">
+        <div class="hero-content">
+          <div class="badge">Your Digital Sanctuary</div>
+          <h1>Find Your Inner Peace, Anywhere.</h1>
+          <p>Immerse yourself in premium online meditation sessions designed to relieve stress, build focus, and cultivate mindfulness in your daily life.</p>
+          <div class="flex gap-sm">
+            <a href="signup.html" class="btn btn-primary">Start Meditation</a>
+            <a href="services.html" class="btn btn-outline">Explore Sessions</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Benefits of Meditation -->
+    <section class="container">
+      <div class="section-header">
+        <h2>Transform Your Mind and Body</h2>
+        <p>Consistent meditation practice brings profound changes to your well-being.</p>
+      </div>
+      <div class="grid grid-cols-3">
+        <div class="card flex flex-col items-center" style="text-align: center;">
+          <i data-lucide="brain" style="width: 48px; height: 48px; color: var(--color-primary); margin-bottom: 1rem;"></i>
+          <h3>Reduce Stress</h3>
+          <p>Lower cortisol levels and soothe your nervous system through guided breathing.</p>
+        </div>
+        <div class="card flex flex-col items-center" style="text-align: center;">
+          <i data-lucide="focus" style="width: 48px; height: 48px; color: var(--color-primary); margin-bottom: 1rem;"></i>
+          <h3>Enhance Focus</h3>
+          <p>Train your mind to stay present and improve your concentration at work and home.</p>
+        </div>
+        <div class="card flex flex-col items-center" style="text-align: center;">
+          <i data-lucide="moon" style="width: 48px; height: 48px; color: var(--color-primary); margin-bottom: 1rem;"></i>
+          <h3>Better Sleep</h3>
+          <p>Fall asleep faster and enjoy deeper rest with our relaxing sleep stories.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Guided Meditation Categories -->
+    <section style="background-color: var(--color-surface-alt);">
+      <div class="container">
+        <div class="flex justify-between items-center" style="margin-bottom: var(--space-lg);">
+          <div>
+            <h2>Guided Sessions for Every Need</h2>
+            <p style="margin-bottom: 0;">Explore our curated library tailored to your emotional state.</p>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-4">
+          <div class="card">
+            <div class="card-img-wrap">
+              <img src="assets/images/card.png" alt="Anxiety Relief">
+            </div>
+            <h4>Anxiety Relief</h4>
+            <p style="font-size: 0.875rem; margin-bottom: 1rem;">15 mins • Beginner</p>
+            <a href="signup.html" style="color: var(--color-primary); font-weight: 500; display: inline-flex; align-items: center; gap: 0.5rem;">Begin <i data-lucide="play-circle" style="width: 16px; height: 16px;"></i></a>
+          </div>
+          <div class="card">
+            <div class="card-img-wrap">
+              <img src="assets/images/card.png" alt="Deep Sleep">
+            </div>
+            <h4>Deep Sleep</h4>
+            <p style="font-size: 0.875rem; margin-bottom: 1rem;">30 mins • All Levels</p>
+             <a href="signup.html" style="color: var(--color-primary); font-weight: 500; display: inline-flex; align-items: center; gap: 0.5rem;">Begin <i data-lucide="play-circle" style="width: 16px; height: 16px;"></i></a>
+          </div>
+          <div class="card">
+            <div class="card-img-wrap">
+              <img src="assets/images/card.png" alt="Morning Energy">
+            </div>
+            <h4>Morning Energy</h4>
+            <p style="font-size: 0.875rem; margin-bottom: 1rem;">10 mins • Intermediate</p>
+             <a href="signup.html" style="color: var(--color-primary); font-weight: 500; display: inline-flex; align-items: center; gap: 0.5rem;">Begin <i data-lucide="play-circle" style="width: 16px; height: 16px;"></i></a>
+          </div>
+          <div class="card">
+            <div class="card-img-wrap">
+              <img src="assets/images/card.png" alt="Mindful Walking">
+            </div>
+            <h4>Mindful Walking</h4>
+            <p style="font-size: 0.875rem; margin-bottom: 1rem;">20 mins • All Levels</p>
+             <a href="signup.html" style="color: var(--color-primary); font-weight: 500; display: inline-flex; align-items: center; gap: 0.5rem;">Begin <i data-lucide="play-circle" style="width: 16px; height: 16px;"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: How It Works -->
+    <section class="container">
+      <div class="section-header">
+        <h2>Your Journey to Mindfulness</h2>
+        <p>Getting started is simple, seamless, and completely tailored to your pace.</p>
+      </div>
+      
+      <div class="grid grid-cols-3">
+        <div style="text-align: center; position: relative;">
+          <div style="width: 60px; height: 60px; border-radius: 50%; background-color: var(--color-primary); color: var(--color-surface); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 600; margin: 0 auto 1.5rem;">1</div>
+          <h3>Create Profile</h3>
+          <p>Sign up to personalize your dashboard and track your meditation journey.</p>
+        </div>
+        <div style="text-align: center; position: relative;">
+          <div style="width: 60px; height: 60px; border-radius: 50%; background-color: var(--color-primary); color: var(--color-surface); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 600; margin: 0 auto 1.5rem;">2</div>
+          <h3>Choose Session</h3>
+          <p>Select from over 500+ guided audio and video meditations across various goals.</p>
+        </div>
+        <div style="text-align: center; position: relative;">
+          <div style="width: 60px; height: 60px; border-radius: 50%; background-color: var(--color-primary); color: var(--color-surface); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 600; margin: 0 auto 1.5rem;">3</div>
+          <h3>Build the Habit</h3>
+          <p>Use our streak tracker and gentle reminders to make mindfulness a daily ritual.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Testimonials -->
+    <section style="background-color: var(--color-surface-alt);">
+      <div class="container">
+        <div class="section-header">
+          <h2>Voices of Serenity</h2>
+          <p>Real stories from our beloved community.</p>
+        </div>
+        
+        <div class="grid grid-cols-2">
+          <div class="card" style="padding: var(--space-lg);">
+            <div class="flex gap-sm" style="color: #F59E0B; margin-bottom: 1rem;">
+              <i data-lucide="star" style="fill: currentColor; width: 20px;"></i>
+              <i data-lucide="star" style="fill: currentColor; width: 20px;"></i>
+              <i data-lucide="star" style="fill: currentColor; width: 20px;"></i>
+              <i data-lucide="star" style="fill: currentColor; width: 20px;"></i>
+              <i data-lucide="star" style="fill: currentColor; width: 20px;"></i>
+            </div>
+            <p style="font-size: 1.25rem; font-style: italic; color: var(--color-text);">"This platform completely changed how I manage daily stress. The 10-minute morning sessions are a game-changer for my workday."</p>
+            <div class="flex items-center gap-sm" style="margin-top: 2rem;">
+              <div style="width: 48px; height: 48px; border-radius: 50%; background-color: var(--color-primary); display: flex; align-items: center; justify-content: center; color: white;">EL</div>
+              <div>
+                <h4 style="margin-bottom: 0;">Emma L.</h4>
+                <p style="font-size: 0.875rem; margin-bottom: 0;">Member since 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="padding: var(--space-lg);">
+            <div class="flex gap-sm" style="color: #F59E0B; margin-bottom: 1rem;">
+              <i data-lucide="star" style="fill: currentColor; width: 20px;"></i>
+              <i data-lucide="star" style="fill: currentColor; width: 20px;"></i>
+              <i data-lucide="star" style="fill: currentColor; width: 20px;"></i>
+              <i data-lucide="star" style="fill: currentColor; width: 20px;"></i>
+              <i data-lucide="star" style="fill: currentColor; width: 20px;"></i>
+            </div>
+            <p style="font-size: 1.25rem; font-style: italic; color: var(--color-text);">"The interface is so calm and clean. Unlike other apps, it doesn't feel cluttered. It truly is a digital sanctuary for my mind."</p>
+            <div class="flex items-center gap-sm" style="margin-top: 2rem;">
+              <div style="width: 48px; height: 48px; border-radius: 50%; background-color: var(--color-primary); display: flex; align-items: center; justify-content: center; color: white;">MR</div>
+              <div>
+                <h4 style="margin-bottom: 0;">Michael R.</h4>
+                <p style="font-size: 0.875rem; margin-bottom: 0;">Member since 2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Pricing / Subscription -->
+    <section class="container" style="padding-bottom: var(--space-xl);">
+      <div class="section-header">
+        <h2>Invest in Your Well-being</h2>
+        <p>Simple, transparent pricing. Cancel anytime.</p>
+      </div>
+      
+      <div class="grid grid-cols-2" style="max-width: 900px; margin: 0 auto;">
+        <div class="card" style="padding: var(--space-lg); border: 2px solid var(--color-border);">
+          <h3>Monthly Plan</h3>
+          <div style="font-size: 3rem; font-weight: 700; color: var(--color-text); margin: 1rem 0;">$14<span style="font-size: 1.125rem; font-weight: 400; color: var(--color-text-muted);">/mo</span></div>
+          <p>Perfect for starting your journey.</p>
+          <ul style="margin: 2rem 0; display: flex; flex-direction: column; gap: 1rem;">
+            <li class="flex items-center gap-sm"><i data-lucide="check" style="color: var(--color-primary);"></i> Full library access</li>
+            <li class="flex items-center gap-sm"><i data-lucide="check" style="color: var(--color-primary);"></i> Daily mindfulness reminders</li>
+            <li class="flex items-center gap-sm"><i data-lucide="check" style="color: var(--color-primary);"></i> Progress tracking</li>
+          </ul>
+          <a href="signup.html" class="btn btn-outline" style="width: 100%;">Start Free Trial</a>
+        </div>
+        
+        <div class="card" style="padding: var(--space-lg); background-color: var(--color-primary); color: white; border: 2px solid var(--color-primary); position: relative;">
+          <div class="badge" style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background-color: #F59E0B; color: white;">Most Popular</div>
+          <h3 style="color: white;">Annual Plan</h3>
+          <div style="font-size: 3rem; font-weight: 700; margin: 1rem 0;">$120<span style="font-size: 1.125rem; font-weight: 400; opacity: 0.8;">/yr</span></div>
+          <p style="color: rgba(255,255,255,0.8);">Save $48 annually. Best value.</p>
+          <ul style="margin: 2rem 0; display: flex; flex-direction: column; gap: 1rem;">
+            <li class="flex items-center gap-sm"><i data-lucide="check" style="color: white;"></i> All Monthly features</li>
+            <li class="flex items-center gap-sm"><i data-lucide="check" style="color: white;"></i> 2 live sessions per month</li>
+            <li class="flex items-center gap-sm"><i data-lucide="check" style="color: white;"></i> Download for offline listening</li>
+          </ul>
+          <a href="signup.html" class="btn" style="width: 100%; background-color: var(--color-surface); color: var(--color-primary);">Start Free Trial</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <i data-lucide="leaf"></i>
+            <span>Studio</span>
+          </a>
+          <p style="max-width: 300px;">Creating digital sanctuaries for mindful living. Find your peace in the present moment.</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="dashboard.html">Dashboard</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Resources</h4>
+          <div class="footer-links">
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Support / FAQ</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Newsletter</h4>
+          <p style="font-size: 0.875rem;">Gentle reminders and wellness insights sent weekly.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault();">
+            <input type="email" placeholder="Email address" class="newsletter-input" required>
+            <button type="submit" class="btn btn-primary" aria-label="Subscribe"><i data-lucide="send" style="width: 16px; height: 16px;"></i></button>
+          </form>
+          
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram" style="width: 20px;"></i></a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter" style="width: 20px;"></i></a>
+            <a href="#" aria-label="YouTube"><i data-lucide="youtube" style="width: 20px;"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Serenity Studio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

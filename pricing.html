@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing & Memberships | Serenity Studio</title>
+  <meta name="description" content="Discover our transparent pricing plans. Invest in your mental well-being with monthly or annual subscriptions.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231F4D3B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z'/><path d='M2 22 12 12'/></svg>">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i data-lucide="leaf"></i>
+        <span>Studio</span>
+      </a>
+      
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="dashboard.html">Dashboard</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline" style="padding: 0.5rem 1rem;">Login</a>
+        <a href="signup.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Sign Up</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+          <i data-lucide="moon"></i>
+        </button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: 80px;">
+    <!-- Intro Header -->
+    <div class="container" style="text-align: center; padding: var(--space-xl) 0 var(--space-md);">
+      <h1 style="max-width: 800px; margin: 0 auto var(--space-sm);">Invest in Your Mind</h1>
+      <p style="max-width: 600px; margin: 0 auto;">Transparent pricing for unlimited peace. All plans come with a risk-free 14-day trial.</p>
+    </div>
+
+    <!-- Section: Pricing / Subscription -->
+    <section class="container" style="padding-bottom: var(--space-xl);">
+      <div class="grid grid-cols-2" style="max-width: 1000px; margin: 0 auto; gap: var(--space-lg);">
+        <div class="card" style="padding: var(--space-lg); border: 2px solid var(--color-border);">
+          <h3>Monthly Plan</h3>
+          <div style="font-size: 3.5rem; font-weight: 700; color: var(--color-text); margin: 1.5rem 0;">$14<span style="font-size: 1.125rem; font-weight: 400; color: var(--color-text-muted);">/mo</span></div>
+          <p>Perfect for starting your journey and building consistency without long-term commitment.</p>
+          <ul style="margin: 2rem 0; display: flex; flex-direction: column; gap: 1rem;">
+            <li class="flex items-center gap-sm"><i data-lucide="check" style="color: var(--color-primary);"></i> Full library access (500+ sessions)</li>
+            <li class="flex items-center gap-sm"><i data-lucide="check" style="color: var(--color-primary);"></i> Daily mindfulness reminders via SMS</li>
+            <li class="flex items-center gap-sm"><i data-lucide="check" style="color: var(--color-primary);"></i> Personalized progress tracking & streaks</li>
+            <li class="flex items-center gap-sm"><i data-lucide="check" style="color: var(--color-primary);"></i> Support community access</li>
+          </ul>
+          <a href="signup.html" class="btn btn-outline" style="width: 100%;">Start Free 14-Day Trial</a>
+        </div>
+        
+        <div class="card" style="padding: var(--space-lg); background-color: var(--color-primary); color: white; border: 2px solid var(--color-primary); position: relative; box-shadow: var(--shadow-xl);">
+          <div class="badge" style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background-color: #F59E0B; color: white;">Best Value & Most Popular</div>
+          <h3 style="color: white;">Annual Plan</h3>
+          <div style="font-size: 3.5rem; font-weight: 700; margin: 1.5rem 0;">$120<span style="font-size: 1.125rem; font-weight: 400; opacity: 0.8;">/yr</span></div>
+          <p style="color: rgba(255,255,255,0.8);">Commit to your long-term wellness. Save $48 annually compared to the monthly plan.</p>
+          <ul style="margin: 2rem 0; display: flex; flex-direction: column; gap: 1rem;">
+            <li class="flex items-center gap-sm"><i data-lucide="check" style="color: white;"></i> <strong>Everything in Monthly</strong></li>
+            <li class="flex items-center gap-sm"><i data-lucide="check" style="color: white;"></i> Exclusive access to 4 live sessions/month</li>
+            <li class="flex items-center gap-sm"><i data-lucide="check" style="color: white;"></i> Unlimited offline downloads via mobile app</li>
+            <li class="flex items-center gap-sm"><i data-lucide="check" style="color: white;"></i> 1-on-1 Quarterly Check-in with an instructor</li>
+          </ul>
+          <a href="signup.html" class="btn" style="width: 100%; background-color: var(--color-surface); color: var(--color-primary);">Start Free 14-Day Trial</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Satisfaction Guarantee -->
+    <section style="background-color: var(--color-surface-alt);">
+       <div class="container text-center" style="padding: var(--space-md) 0;">
+         <div class="flex items-center justify-center gap-sm" style="color: var(--color-text);">
+            <i data-lucide="shield-check" style="color: var(--color-primary); width: 32px; height: 32px;"></i>
+            <h3 style="margin-bottom: 0;">100% Risk-Free Guarantee</h3>
+            <p style="margin-bottom: 0; margin-left: 1rem; color: var(--color-text-muted);">Cancel anytime inside the 14-day trial period and you won't be charged a single cent. No questions asked.</p>
+         </div>
+       </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <i data-lucide="leaf"></i>
+            <span>Studio</span>
+          </a>
+          <p style="max-width: 300px;">Creating digital sanctuaries for mindful living. Find your peace in the present moment.</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="dashboard.html">Dashboard</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Resources</h4>
+          <div class="footer-links">
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Support / FAQ</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Newsletter</h4>
+          <p style="font-size: 0.875rem;">Gentle reminders and wellness insights sent weekly.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault();">
+            <input type="email" placeholder="Email address" class="newsletter-input" required>
+            <button type="submit" class="btn btn-primary" aria-label="Subscribe"><i data-lucide="send" style="width: 16px; height: 16px;"></i></button>
+          </form>
+          
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram" style="width: 20px;"></i></a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter" style="width: 20px;"></i></a>
+            <a href="#" aria-label="YouTube"><i data-lucide="youtube" style="width: 20px;"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Serenity Studio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
