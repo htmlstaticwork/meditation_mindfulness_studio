@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications | Serenity Studio</title>
+  <meta name="description" content="Stay updated with your meditation schedule and studio announcements.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231F4D3B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z'/><path d='M2 22 12 12'/></svg>">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="dashboard-layout">
+
+  <!-- Mobile Sidebar Toggle -->
+  <div style="position: fixed; top: 1rem; left: 1rem; z-index: 50; display: none;" class="mobile-only-btn">
+    <button id="sidebar-toggle" style="background: var(--color-surface); border: 1px solid var(--color-border); padding: 0.5rem; border-radius: 4px; color: var(--color-text);">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+  
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header flex items-center justify-between">
+      <a href="index.html" class="logo">
+        <i data-lucide="leaf"></i>
+        <span>Studio</span>
+      </a>
+    </div>
+    
+    <nav class="sidebar-nav">
+      <a href="dashboard.html" class="sidebar-link">
+        <i data-lucide="home"></i> Home
+      </a>
+      <a href="progress.html" class="sidebar-link">
+        <i data-lucide="bar-chart-2"></i> My Progress
+      </a>
+      <a href="streak.html" class="sidebar-link">
+        <i data-lucide="flame"></i> Practice Streak
+      </a>
+      <a href="notifications.html" class="sidebar-link active">
+        <i data-lucide="bell"></i> Notifications <span class="badge" style="margin: 0 0 0 auto; color: white; background: var(--color-primary); padding: 2px 8px; font-size: 0.75rem;">3</span>
+      </a>
+      <a href="profile.html" class="sidebar-link">
+        <i data-lucide="user"></i> Profile
+      </a>
+    </nav>
+    
+    <div class="sidebar-footer">
+      <a href="index.html" class="sidebar-link" style="color: #ef4444;">
+        <i data-lucide="log-out"></i> Logout
+      </a>
+      <div style="margin-top: 1rem; text-align: center; display: flex; justify-content: center; gap: 0.5rem;">
+         <button class="rtl-toggle" style="background: var(--color-surface-alt); border: none; padding: 0.5rem; border-radius: 4px; color: var(--color-text); cursor: pointer;" title="Toggle RTL">
+          <i data-lucide="languages" style="width: 20px;"></i>
+        </button>
+         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode" style="margin: 0; background: var(--color-surface-alt);">
+          <i data-lucide="moon"></i>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="dashboard-main">
+    
+    <div class="flex justify-between items-center" style="margin-bottom: var(--space-lg);">
+      <div>
+        <h1>Inbox</h1>
+        <p>Your sanctuary for studio updates and achievements.</p>
+      </div>
+      <button class="btn btn-outline" style="font-size: 0.875rem;">Mark all as read</button>
+    </div>
+
+    <!-- Notifications List -->
+    <div class="flex flex-col gap-sm">
+      
+      <!-- New Notification Card -->
+      <div class="card" style="padding: 1.5rem; display: flex; justify-content: space-between; align-items: flex-start;">
+        <div class="flex gap-md">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(31, 77, 59, 0.1); display: flex; align-items: center; justify-content: center; color: var(--color-primary); flex-shrink: 0;">
+            <i data-lucide="calendar"></i>
+          </div>
+          <div>
+            <h4 style="margin-bottom: 0.25rem;">New Live Session: Full Moon Sound Bath</h4>
+            <p style="font-size: 0.875rem; margin-bottom: 0.5rem; color: var(--color-text);">Sarah Jenkins just scheduled a new live sound bath for tomorrow evening. Limited spots available.</p>
+            <div style="font-size: 0.75rem; color: var(--color-text-muted);">2 hours ago</div>
+          </div>
+        </div>
+        <button class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.8125rem;">Join Waitlist</button>
+      </div>
+
+      <div class="card" style="padding: 1.5rem; display: flex; justify-content: space-between; align-items: flex-start;">
+        <div class="flex gap-md">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: #93c5fd; display: flex; align-items: center; justify-content: center; color: #1e40af; flex-shrink: 0;">
+            <i data-lucide="award"></i>
+          </div>
+          <div>
+            <h4 style="margin-bottom: 0.25rem;">Milestone Unlocked: Deep Breather</h4>
+            <p style="font-size: 0.875rem; margin-bottom: 0.5rem; color: var(--color-text);">Congratulations! You've logged 500 total breathing cycles. A new masterclass has been unlocked in your practice list.</p>
+            <div style="font-size: 0.75rem; color: var(--color-text-muted);">Yesterday, 4:30 PM</div>
+          </div>
+        </div>
+        <button class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.8125rem;">Share</button>
+      </div>
+
+      <div class="card" style="padding: 1.5rem; display: flex; justify-content: space-between; align-items: flex-start;">
+        <div class="flex gap-md">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(31, 77, 59, 0.1); display: flex; align-items: center; justify-content: center; color: var(--color-primary); flex-shrink: 0;">
+            <i data-lucide="info"></i>
+          </div>
+          <div>
+            <h4 style="margin-bottom: 0.25rem;">Studio Policy Update</h4>
+            <p style="font-size: 0.875rem; margin-bottom: 0.5rem; color: var(--color-text);">We’ve refined our cancellation window for live sessions to better accommodate waitlisted members.</p>
+            <div style="font-size: 0.75rem; color: var(--color-text-muted);">2 days ago</div>
+          </div>
+        </div>
+        <button class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.8125rem;">Review</button>
+      </div>
+
+      <!-- Read Notification -->
+      <div class="card" style="opacity: 0.75; padding: 1.5rem; display: flex; justify-content: space-between; align-items: flex-start;">
+        <div class="flex gap-md">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--color-surface-alt); display: flex; align-items: center; justify-content: center; color: var(--color-text-muted); flex-shrink: 0;">
+            <i data-lucide="message-square"></i>
+          </div>
+          <div>
+            <h4 style="margin-bottom: 0.25rem; font-weight: 400;">Your 14-day Streak Reward is Here</h4>
+            <p style="font-size: 0.875rem; margin-bottom: 0.5rem; color: var(--color-text-muted);">Check your Profile for a new set of premium soundscapes waiting to be used.</p>
+            <div style="font-size: 0.75rem; color: var(--color-text-muted);">Last Week</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

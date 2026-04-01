@@ -68,8 +68,11 @@
       Don't have an account? <a href="signup.html" style="color: var(--color-primary); font-weight: 500;">Sign up</a>
     </p>
 
-    <div style="text-align: center; margin-top: 1.5rem;">
-      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode" style="margin: 0 auto; background: var(--color-surface-alt);">
+    <div style="text-align: center; margin-top: 1.5rem; display: flex; justify-content: center; gap: 0.5rem;">
+      <button class="rtl-toggle" style="background: var(--color-surface-alt); border: none; padding: 0.5rem; border-radius: 4px; color: var(--color-text); cursor: pointer;" title="Toggle RTL">
+        <i data-lucide="languages" style="width: 20px;"></i>
+      </button>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode" style="margin: 0; background: var(--color-surface-alt);">
         <i data-lucide="moon"></i>
       </button>
     </div>

@@ -20,17 +20,35 @@
       </a>
       
       <nav class="nav-links" id="nav-links">
-        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <a href="index.html" class="flex items-center gap-sm">Home <i data-lucide="chevron-down" style="width: 14px; height: 14px; margin-top: 2px;"></i></a>
+          <div class="dropdown-content">
+            <a href="index.html">Home 1</a>
+            <a href="index-2.html">Home 2</a>
+          </div>
+        </div>
         <a href="about.html">About</a>
         <a href="services.html" class="active">Services</a>
         <a href="blog.html">Blog</a>
+        <a href="pricing.html">Pricing</a>
         <a href="contact.html">Contact</a>
         <a href="dashboard.html">Dashboard</a>
+        
+        <div class="mobile-auth-links flex flex-col gap-sm" style="display: none; margin-top: var(--space-md); width: 100%;">
+          <a href="login.html" class="btn btn-outline" style="width: 100%;">Login</a>
+          <a href="signup.html" class="btn btn-primary" style="width: 100%;">Sign Up</a>
+        </div>
       </nav>
 
       <div class="nav-actions">
         <a href="login.html" class="btn btn-outline" style="padding: 0.5rem 1rem;">Login</a>
         <a href="signup.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Sign Up</a>
+      </div>
+
+      <div class="nav-controls">
+        <button class="rtl-toggle" style="background: var(--color-surface-alt); border: none; padding: 0.5rem; border-radius: 4px; color: var(--color-text); cursor: pointer;" title="Toggle RTL">
+          <i data-lucide="languages" style="width: 20px;"></i>
+        </button>
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
           <i data-lucide="moon"></i>
         </button>
@@ -49,9 +67,10 @@
     </div>
 
     <!-- Section 1: Guided Meditations -->
-    <section class="container">
+    <section>
+      <div class="container">
       <div class="grid grid-cols-2 items-center gap-lg">
-        <div>
+        <div style="text-align: center;">
           <div class="badge">Core Offering</div>
           <h2 style="margin-bottom: var(--space-md);">On-Demand Guided Meditations</h2>
           <p>Access our vast library of over 500+ studio-recorded audio and video sessions. Our categories are intuitively designed to help you quickly find the support you need, precisely when you need it.</p>
@@ -66,13 +85,14 @@
           <img src="assets/images/hero.png" alt="Guided Meditations" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
         </div>
       </div>
+      </div>
     </section>
 
     <!-- Section 2: Live Group Sessions -->
     <section style="background-color: var(--color-surface-alt);">
       <div class="container">
         <div class="grid grid-cols-2 items-center gap-lg">
-          <div style="order: 2;">
+        <div style="order: 2; text-align: center;">
             <div class="badge">Premium Offering</div>
             <h2 style="margin-bottom: var(--space-md);">Live Studio Sessions</h2>
             <p>Experience the transformative energy of practicing together in real-time. Our global master instructors lead weekly live sessions spanning Vipassana, Zen, Yoga Nidra, and somatic healing practices.</p>
@@ -101,7 +121,8 @@
     </section>
 
     <!-- Section 3: Stress & Anxiety Programs -->
-    <section class="container">
+    <section>
+      <div class="container">
       <div class="section-header">
         <h2>Clinical Stress & Anxiety Programs</h2>
         <p>Therapeutic, structured 4-week paths designed by psychologists to help you regain control over your nervous system.</p>
@@ -132,6 +153,7 @@
           <p>Rewire your brain's relationship with sleep through progressive muscle relaxation and cognitive defusion.</p>
           <a href="signup.html" style="color: var(--color-primary); font-weight: 500; margin-top: auto;">Start Program <i data-lucide="arrow-right" style="width: 16px; display: inline-block; vertical-align: middle;"></i></a>
         </div>
+        </div>
       </div>
     </section>
 
@@ -142,24 +164,26 @@
         <p style="max-width: 700px; margin: 0 auto 2.5rem; color: rgba(255,255,255,0.8); font-size: 1.125rem;">Boost employee well-being, reduce burnout, and foster a culture of focused calm with our enterprise solutions.</p>
         
         <div class="grid grid-cols-3" style="margin-bottom: 3rem; text-align: left;">
-          <div style="background-color: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: var(--radius-md);">
+          <div class="card-tertiary">
             <i data-lucide="users" style="width: 32px; height: 32px; margin-bottom: 1rem; color: white;"></i>
             <h4 style="color: white;">Team Workshops</h4>
             <p style="margin-bottom: 0; font-size: 0.875rem; color: rgba(255,255,255,0.8);">Live interactive sessions focused on resilience and emotional intelligence.</p>
           </div>
-          <div style="background-color: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: var(--radius-md);">
+          <div class="card-tertiary">
             <i data-lucide="smartphone" style="width: 32px; height: 32px; margin-bottom: 1rem; color: white;"></i>
             <h4 style="color: white;">App Access</h4>
             <p style="margin-bottom: 0; font-size: 0.875rem; color: rgba(255,255,255,0.8);">Provide full premium app access to every member of your organization.</p>
           </div>
-          <div style="background-color: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: var(--radius-md);">
+          <div class="card-tertiary">
             <i data-lucide="bar-chart" style="width: 32px; height: 32px; margin-bottom: 1rem; color: white;"></i>
             <h4 style="color: white;">Engagement Metrics</h4>
             <p style="margin-bottom: 0; font-size: 0.875rem; color: rgba(255,255,255,0.8);">Anonymous dashboards to track overall program adoption and impact.</p>
           </div>
         </div>
         
-        <a href="contact.html" class="btn" style="background-color: var(--color-surface); color: var(--color-primary); font-size: 1.125rem;">Request Corporate Demo</a>
+        <div class="flex justify-center">
+          <a href="contact.html" class="btn btn-white" style="font-size: 1.125rem;">Request Corporate Demo</a>
+        </div>
       </div>
     </section>
   </main>
@@ -174,13 +198,24 @@
             <span>Studio</span>
           </a>
           <p style="max-width: 300px;">Creating digital sanctuaries for mindful living. Find your peace in the present moment.</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 2-2 58.38 58.38 0 0 1 15 0 2 2 0 0 1 2 2 24.12 24.12 0 0 1 0 10 2 2 0 0 1-2 2 58.38 58.38 0 0 1-15 0 2 2 0 0 1-2-2z"></path><polyline points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polyline></svg>
+            </a>
+          </div>
         </div>
         
         <div>
           <h4 class="footer-title">Quick Links</h4>
           <div class="footer-links">
             <a href="about.html">About Us</a>
-            <a href="services.html">Services</a>
+            <a href="services.html" class="active">Services</a>
             <a href="pricing.html">Pricing</a>
             <a href="dashboard.html">Dashboard</a>
           </div>
@@ -197,16 +232,7 @@
         <div>
           <h4 class="footer-title">Newsletter</h4>
           <p style="font-size: 0.875rem;">Gentle reminders and wellness insights sent weekly.</p>
-          <form class="newsletter-form" onsubmit="event.preventDefault();">
-            <input type="email" placeholder="Email address" class="newsletter-input" required>
-            <button type="submit" class="btn btn-primary" aria-label="Subscribe"><i data-lucide="send" style="width: 16px; height: 16px;"></i></button>
           </form>
-          
-          <div class="social-icons">
-            <a href="#" aria-label="Instagram"><i data-lucide="instagram" style="width: 20px;"></i></a>
-            <a href="#" aria-label="Twitter"><i data-lucide="twitter" style="width: 20px;"></i></a>
-            <a href="#" aria-label="YouTube"><i data-lucide="youtube" style="width: 20px;"></i></a>
-          </div>
         </div>
       </div>
       

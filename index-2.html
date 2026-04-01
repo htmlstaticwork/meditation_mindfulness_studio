@@ -111,17 +111,35 @@
       </a>
       
       <nav class="nav-links" id="nav-links">
-        <a href="index.html" style="color: white;">Home</a>
+        <div class="dropdown">
+          <a href="index.html" class="flex items-center gap-sm" style="color: white;">Home <i data-lucide="chevron-down" style="width: 14px; height: 14px; margin-top: 2px;"></i></a>
+          <div class="dropdown-content">
+            <a href="index.html">Home 1</a>
+            <a href="index-2.html">Home 2</a>
+          </div>
+        </div>
         <a href="about.html" style="color: white;">About</a>
         <a href="services.html" style="color: white;">Services</a>
         <a href="blog.html" style="color: white;">Blog</a>
+        <a href="pricing.html" style="color: white;">Pricing</a>
         <a href="contact.html" style="color: white;">Contact</a>
         <a href="dashboard.html" style="color: white;">Dashboard</a>
+        
+        <div class="mobile-auth-links flex flex-col gap-sm" style="display: none; margin-top: var(--space-md); width: 100%;">
+          <a href="login.html" class="btn btn-outline" style="color: white; border-color: white; width: 100%;">Login</a>
+          <a href="signup.html" class="btn btn-white" style="width: 100%;">Sign Up</a>
+        </div>
       </nav>
 
       <div class="nav-actions">
         <a href="login.html" class="btn btn-outline" style="color: white; border-color: white; padding: 0.5rem 1rem;">Login</a>
-        <a href="signup.html" class="btn btn-primary" style="background-color: white; color: var(--color-primary); padding: 0.5rem 1rem;">Sign Up</a>
+        <a href="signup.html" class="btn btn-white" style="padding: 0.5rem 1rem;">Sign Up</a>
+      </div>
+
+      <div class="nav-controls">
+        <button class="rtl-toggle" style="background: rgba(255,255,255,0.1); border: none; padding: 0.5rem; border-radius: 4px; color: white; cursor: pointer;" title="Toggle RTL">
+          <i data-lucide="languages" style="width: 20px;"></i>
+        </button>
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode" style="color: white;">
           <i data-lucide="moon"></i>
         </button>
@@ -135,11 +153,9 @@
   <main>
     <!-- Section 1: Premium Hero with Video Background -->
     <section class="hero-premium">
-      <img src="assets/images/hero.png" alt="Meditation Video Background" class="hero-video-bg">
+      <img src="assets/images/hero_bg_2.png" alt="Meditation Video Background" class="hero-video-bg">
       <div class="hero-premium-content">
-        <div class="play-btn-large">
-          <i data-lucide="play" style="width: 32px; height: 32px; fill: white; margin-left: 5px;"></i>
-        </div>
+
         <h1>Elevate Your Consciousness</h1>
         <p style="margin-bottom: 2rem;">Join master teachers for live guided sessions and comprehensive mindfulness programs designed to awaken your inner potential.</p>
         <a href="signup.html" class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 2rem;">Begin Your Practice</a>
@@ -171,7 +187,7 @@
           </div>
         </a>
         <a href="services.html" class="program-card">
-          <img src="assets/images/card.png" alt="Deep Sleep Restoration">
+          <img src="assets/images/deep_sleep_card.png" alt="Deep Sleep Restoration">
           <div class="program-content">
             <span class="badge" style="background: rgba(255,255,255,0.2); color: white; backdrop-filter: blur(4px);">All Levels</span>
             <h3>Deep Sleep Restoration</h3>
@@ -185,34 +201,34 @@
     <section style="background-color: var(--color-surface-alt);">
       <div class="container">
         <div class="grid grid-cols-2 items-center gap-lg">
-          <div>
+          <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
             <h2 style="margin-bottom: var(--space-md);">Your Daily Mindfulness Ritual</h2>
             <p>We've designed a platform that seamlessly integrates into your busy life. Whether you have 5 minutes between meetings or an hour on Sunday morning, there is a practice waiting for you.</p>
             
-            <ul style="margin: 2rem 0; display: flex; flex-direction: column; gap: 1.5rem;">
-              <li class="flex gap-sm">
+            <ul style="margin: 2rem 0; display: flex; flex-direction: column; gap: 1.5rem; width: 100%; max-width: 320px;">
+              <li class="flex gap-sm items-center">
                 <div style="background-color: var(--color-primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                   <i data-lucide="sun"></i>
                 </div>
-                <div>
+                <div style="text-align: left;">
                   <h4 style="margin-bottom: 0.25rem;">Morning Intentions</h4>
                   <p style="font-size: 0.875rem; margin-bottom: 0;">Start the day with purpose and clarity.</p>
                 </div>
               </li>
-              <li class="flex gap-sm">
+              <li class="flex gap-sm items-center">
                 <div style="background-color: var(--color-primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                   <i data-lucide="coffee"></i>
                 </div>
-                <div>
+                <div style="text-align: left;">
                   <h4 style="margin-bottom: 0.25rem;">Midday Resets</h4>
                   <p style="font-size: 0.875rem; margin-bottom: 0;">Quick 5-minute breathing spaces.</p>
                 </div>
               </li>
-              <li class="flex gap-sm">
+              <li class="flex gap-sm items-center">
                 <div style="background-color: var(--color-primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                   <i data-lucide="moon"></i>
                 </div>
-                <div>
+                <div style="text-align: left;">
                   <h4 style="margin-bottom: 0.25rem;">Evening Wind Down</h4>
                   <p style="font-size: 0.875rem; margin-bottom: 0;">Release the day's tension for better sleep.</p>
                 </div>
@@ -221,13 +237,7 @@
           </div>
           <div style="position: relative;">
             <img src="assets/images/card.png" alt="Daily Practice" style="border-radius: var(--radius-lg); aspect-ratio: 4/5; object-fit: cover; box-shadow: var(--shadow-lg);">
-            <div class="card" style="position: absolute; bottom: -30px; left: -30px; width: 250px; padding: 1.5rem;">
-              <div class="flex items-center gap-sm" style="margin-bottom: 0.5rem;">
-                <i data-lucide="flame" style="color: #F59E0B;"></i>
-                <span style="font-weight: 600; color: var(--color-text);">14 Day Streak</span>
-              </div>
-              <p style="font-size: 0.875rem; margin-bottom: 0;">You're doing great! Keep building your habit.</p>
-            </div>
+
           </div>
         </div>
       </div>
@@ -274,57 +284,87 @@
       </div>
     </section>
 
-    <!-- Section 5: Community & Reviews -->
-    <section style="background-color: var(--color-primary); color: white; text-align: center;">
-      <div class="container">
-        <i data-lucide="quote" style="width: 48px; height: 48px; fill: rgba(255,255,255,0.2); margin: 0 auto 1.5rem; display: block;"></i>
-        <h2 style="color: white; font-weight: 300; font-size: clamp(1.5rem, 3vw, 2.5rem); max-width: 800px; margin: 0 auto 2rem; line-height: 1.4;">"The premium live sessions bring the studio experience straight into my living room. I feel deeply connected to the instructors and the community, even from thousands of miles away."</h2>
-        <div style="font-weight: 600; font-size: 1.125rem;">Samantha W.</div>
-        <div style="color: rgba(255,255,255,0.7); font-size: 0.875rem;">Premium Member, New York</div>
+    <!-- Section 4: Meet Our Guides -->
+    <section class="container" style="padding: var(--space-xl) 0;">
+      <div class="section-header" style="text-align: center; max-width: 700px; margin: 0 auto var(--space-lg);">
+        <span class="badge">Master Teachers</span>
+        <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Meet Our World-Class Guides</h2>
+        <p>Learn from internationally certified instructors dedicated to your personal growth and inner peace.</p>
+      </div>
+      
+      <div class="grid grid-cols-3 gap-lg">
+        <div class="card" style="padding: 0; overflow: hidden; border-radius: var(--radius-lg); text-align: center; border: 1px solid var(--color-border); background-color: var(--color-surface);">
+          <img src="assets/images/avatar_emma.png" alt="Emma Riviera" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+          <div style="padding: 1.5rem;">
+            <h4 style="margin-bottom: 0.25rem;">Emma Riviera</h4>
+            <p style="font-size: 0.875rem; color: var(--color-primary); font-weight: 600; margin-bottom: 1rem;">Mindfulness & Breathwork</p>
+            <p style="font-size: 0.875rem; line-height: 1.6;">Bringing 10+ years of expertise in holistic wellness and transformative breathing techniques.</p>
+          </div>
+        </div>
         
-        <div class="flex justify-center gap-sm" style="margin-top: 3rem;">
-          <div style="width: 12px; height: 12px; border-radius: 50%; background-color: white;"></div>
-          <div style="width: 12px; height: 12px; border-radius: 50%; background-color: rgba(255,255,255,0.3);"></div>
-          <div style="width: 12px; height: 12px; border-radius: 50%; background-color: rgba(255,255,255,0.3);"></div>
+        <div class="card" style="padding: 0; overflow: hidden; border-radius: var(--radius-lg); text-align: center; border: 1px solid var(--color-border); background-color: var(--color-surface);">
+          <img src="assets/images/avatar_michael.png" alt="Michael Chen" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+          <div style="padding: 1.5rem;">
+            <h4 style="margin-bottom: 0.25rem;">Michael Chen</h4>
+            <p style="font-size: 0.875rem; color: var(--color-primary); font-weight: 600; margin-bottom: 1rem;">Zen Master</p>
+            <p style="font-size: 0.875rem; line-height: 1.6;">Specializing in traditional Zen practices and Vipassana meditation for mental clarity.</p>
+          </div>
+        </div>
+        
+        <div class="card" style="padding: 0; overflow: hidden; border-radius: var(--radius-lg); text-align: center; border: 1px solid var(--color-border); background-color: var(--color-surface);">
+          <img src="assets/images/avatar_sarah.png" alt="Sarah Jenkins" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+          <div style="padding: 1.5rem;">
+            <h4 style="margin-bottom: 0.25rem;">Sarah Jenkins</h4>
+            <p style="font-size: 0.875rem; color: var(--color-primary); font-weight: 600; margin-bottom: 1rem;">Sleep & Relaxation</p>
+            <p style="font-size: 0.875rem; line-height: 1.6;">Helping you find restorative rest through Yoga Nidra and deep relaxation protocols.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 6: Membership Plans -->
-    <section class="container" style="padding-bottom: var(--space-xl);">
-      <div class="section-header">
-        <h2>Premium Wellness Memberships</h2>
-        <p>Choose the level of guidance that matches your journey.</p>
-      </div>
-      
-      <div class="grid grid-cols-2" style="max-width: 900px; margin: 0 auto;">
-          <div class="card" style="padding: var(--space-lg); border: 2px solid var(--color-border);">
-            <h3>Essential Access</h3>
-            <div style="font-size: 3rem; font-weight: 700; color: var(--color-text); margin: 1rem 0;">$14<span style="font-size: 1.125rem; font-weight: 400; color: var(--color-text-muted);">/mo</span></div>
-            <p>Self-guided practice at your own pace.</p>
-            <ul style="margin: 2rem 0; display: flex; flex-direction: column; gap: 1rem;">
-              <li class="flex items-center gap-sm"><i data-lucide="check" style="color: var(--color-primary);"></i> 500+ Guided Meditations</li>
-              <li class="flex items-center gap-sm"><i data-lucide="check" style="color: var(--color-primary);"></i> Sleep Stories & Soundscapes</li>
-              <li class="flex items-center gap-sm"><i data-lucide="check" style="color: var(--color-primary);"></i> Daily Mindfulness Tips</li>
-            </ul>
-            <a href="signup.html" class="btn btn-outline" style="width: 100%;">Choose Essential</a>
+    <!-- Section 5: Mindfulness Insights -->
+    <section style="background-color: var(--color-bg-alt); padding: var(--space-xl) 0;">
+      <div class="container">
+        <div class="flex justify-between items-center" style="margin-bottom: var(--space-lg);">
+          <div style="max-width: 500px;">
+            <span class="badge">Resources</span>
+            <h2 style="font-size: 2.25rem; margin-top: 0.5rem;">Mindfulness Insights</h2>
           </div>
-          
-          <div class="card" style="padding: var(--space-lg); background-color: var(--color-surface); border: 2px solid var(--color-primary); position: relative; box-shadow: var(--shadow-xl);">
-            <div class="badge" style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background-color: var(--color-primary); color: white;">Premium Experience</div>
-            <h3>All Access + Live</h3>
-            <div style="font-size: 3rem; font-weight: 700; margin: 1rem 0; color: var(--color-text);">$29<span style="font-size: 1.125rem; font-weight: 400; color: var(--color-text-muted);">/mo</span></div>
-            <p>The ultimate holistic wellness membership.</p>
-            <ul style="margin: 2rem 0; display: flex; flex-direction: column; gap: 1rem;">
-              <li class="flex items-center gap-sm"><i data-lucide="check" style="color: var(--color-primary);"></i> All Essential Features</li>
-              <li class="flex items-center gap-sm"><i data-lucide="check" style="color: var(--color-primary);"></i> Unlimited Live Sessions Check-ins</li>
-              <li class="flex items-center gap-sm"><i data-lucide="check" style="color: var(--color-primary);"></i> 4-Week Structured Mastery Programs</li>
-              <li class="flex items-center gap-sm"><i data-lucide="check" style="color: var(--color-primary);"></i> 1-on-1 Monthly Instructor Guidance</li>
-            </ul>
-            <a href="signup.html" class="btn btn-primary" style="width: 100%;">Choose Premium</a>
-          </div>
+          <a href="blog.html" class="btn btn-outline">Explore Our Blog <i data-lucide="arrow-right"></i></a>
         </div>
+        
+        <div class="grid grid-cols-3 gap-lg">
+          <a href="blog.html" class="card" style="padding: 0; overflow: hidden; border-radius: var(--radius-lg); border: none; box-shadow: var(--shadow-sm); transition: transform 0.3s ease;">
+            <img src="assets/images/blog_1.png" alt="The Art of Letting Go" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 1.5rem; text-align: center;">
+              <span style="font-size: 0.75rem; font-weight: 600; color: var(--color-primary); text-transform: uppercase;">Philosophy</span>
+              <h4 style="margin: 0.5rem 0;">The Art of Letting Go: A Guide</h4>
+              <p style="font-size: 0.875rem; color: var(--color-text-muted); line-height: 1.5;">Learn the ancient philosophy behind detachment and finding inner peace in a chaotic world.</p>
+            </div>
+          </a>
+          
+          <a href="blog.html" class="card" style="padding: 0; overflow: hidden; border-radius: var(--radius-lg); border: none; box-shadow: var(--shadow-sm); transition: transform 0.3s ease;">
+            <img src="assets/images/blog_2.png" alt="Morning Rituals" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 1.5rem; text-align: center;">
+              <span style="font-size: 0.75rem; font-weight: 600; color: var(--color-primary); text-transform: uppercase;">Habits</span>
+              <h4 style="margin: 0.5rem 0;">Morning Rituals for High Energy</h4>
+              <p style="font-size: 0.875rem; color: var(--color-text-muted); line-height: 1.5;">Start your day with purpose using these science-backed mindfulness exercises.</p>
+            </div>
+          </a>
+          
+          <a href="blog.html" class="card" style="padding: 0; overflow: hidden; border-radius: var(--radius-lg); border: none; box-shadow: var(--shadow-sm); transition: transform 0.3s ease;">
+            <img src="assets/images/blog_3.png" alt="Meditation for Busy People" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 1.5rem; text-align: center;">
+              <span style="font-size: 0.75rem; font-weight: 600; color: var(--color-primary); text-transform: uppercase;">lifestyle</span>
+              <h4 style="margin: 0.5rem 0;">Meditation for Busy People</h4>
+              <p style="font-size: 0.875rem; color: var(--color-text-muted); line-height: 1.5;">No time? Discover how to integrate mindfulness into your everyday tasks seamlessly.</p>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
+
+
   </main>
 
   <!-- Footer -->
@@ -337,6 +377,17 @@
             <span>Studio</span>
           </a>
           <p style="max-width: 300px;">Creating digital sanctuaries for mindful living. Find your peace in the present moment.</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 2-2 58.38 58.38 0 0 1 15 0 2 2 0 0 1 2 2 24.12 24.12 0 0 1 0 10 2 2 0 0 1-2 2 58.38 58.38 0 0 1-15 0 2 2 0 0 1-2-2z"></path><polyline points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polyline></svg>
+            </a>
+          </div>
         </div>
         
         <div>
@@ -360,16 +411,7 @@
         <div>
           <h4 class="footer-title">Newsletter</h4>
           <p style="font-size: 0.875rem;">Gentle reminders and wellness insights sent weekly.</p>
-          <form class="newsletter-form" onsubmit="event.preventDefault();">
-            <input type="email" placeholder="Email address" class="newsletter-input" required>
-            <button type="submit" class="btn btn-primary" aria-label="Subscribe"><i data-lucide="send" style="width: 16px; height: 16px;"></i></button>
           </form>
-          
-          <div class="social-icons">
-            <a href="#" aria-label="Instagram"><i data-lucide="instagram" style="width: 20px;"></i></a>
-            <a href="#" aria-label="Twitter"><i data-lucide="twitter" style="width: 20px;"></i></a>
-            <a href="#" aria-label="YouTube"><i data-lucide="youtube" style="width: 20px;"></i></a>
-          </div>
         </div>
       </div>
       

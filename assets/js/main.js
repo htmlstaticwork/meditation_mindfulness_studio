@@ -91,6 +91,38 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // --- RTL Toggle Implementation ---
+  const rtlToggles = document.querySelectorAll('.rtl-toggle');
+  const initRTL = () => {
+    const storedRTL = localStorage.getItem('rtl') === 'true';
+    if (storedRTL) {
+      document.documentElement.setAttribute('dir', 'rtl');
+    }
+  };
+
+  const toggleRTL = () => {
+    const currentRTL = document.documentElement.getAttribute('dir') === 'rtl';
+    const nextRTL = !currentRTL;
+    
+    if (nextRTL) {
+      document.documentElement.setAttribute('dir', 'rtl');
+    } else {
+      document.documentElement.removeAttribute('dir');
+    }
+    
+    localStorage.setItem('rtl', nextRTL);
+    
+    // Refresh icons to ensure flipping logic applies
+    if (window.lucide) {
+      lucide.createIcons();
+    }
+  };
+
+  initRTL();
+  rtlToggles.forEach(btn => {
+    btn.addEventListener('click', toggleRTL);
+  });
+
   // Initialize all Lucide icons
   if(window.lucide) {
     lucide.createIcons();

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Progress | Serenity Studio</title>
+  <meta name="description" content="Track your mindfulness journey with Serenity Studio progress stats.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231F4D3B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z'/><path d='M2 22 12 12'/></svg>">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="dashboard-layout">
+
+  <!-- Mobile Sidebar Toggle -->
+  <div style="position: fixed; top: 1rem; left: 1rem; z-index: 50; display: none;" class="mobile-only-btn">
+    <button id="sidebar-toggle" style="background: var(--color-surface); border: 1px solid var(--color-border); padding: 0.5rem; border-radius: 4px; color: var(--color-text);">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+  
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header flex items-center justify-between">
+      <a href="index.html" class="logo">
+        <i data-lucide="leaf"></i>
+        <span>Studio</span>
+      </a>
+    </div>
+    
+    <nav class="sidebar-nav">
+      <a href="dashboard.html" class="sidebar-link">
+        <i data-lucide="home"></i> Home
+      </a>
+      <a href="progress.html" class="sidebar-link active">
+        <i data-lucide="bar-chart-2"></i> My Progress
+      </a>
+      <a href="streak.html" class="sidebar-link">
+        <i data-lucide="flame"></i> Practice Streak
+      </a>
+      <a href="notifications.html" class="sidebar-link">
+        <i data-lucide="bell"></i> Notifications <span class="badge" style="margin: 0 0 0 auto; color: white; background: var(--color-primary); padding: 2px 8px; font-size: 0.75rem;">3</span>
+      </a>
+      <a href="profile.html" class="sidebar-link">
+        <i data-lucide="user"></i> Profile
+      </a>
+    </nav>
+    
+    <div class="sidebar-footer">
+      <a href="index.html" class="sidebar-link" style="color: #ef4444;">
+        <i data-lucide="log-out"></i> Logout
+      </a>
+      <div style="margin-top: 1rem; text-align: center; display: flex; justify-content: center; gap: 0.5rem;">
+         <button class="rtl-toggle" style="background: var(--color-surface-alt); border: none; padding: 0.5rem; border-radius: 4px; color: var(--color-text); cursor: pointer;" title="Toggle RTL">
+          <i data-lucide="languages" style="width: 20px;"></i>
+        </button>
+         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode" style="margin: 0; background: var(--color-surface-alt);">
+          <i data-lucide="moon"></i>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="dashboard-main">
+    
+    <div style="margin-bottom: var(--space-lg);">
+      <h1>My Mindfulness Progress</h1>
+      <p>Tracking your journey toward clarity and inner peace.</p>
+    </div>
+
+    <!-- Stats Grid -->
+    <div class="grid grid-cols-4" style="margin-bottom: var(--space-lg);">
+      <div class="card p-md">
+        <div style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 0.5rem;">Total Minutes</div>
+        <div style="font-size: 1.75rem; font-weight: 700;">1,240</div>
+        <div style="font-size: 0.75rem; color: #10b981; margin-top: 0.25rem;">+12% from last month</div>
+      </div>
+      <div class="card p-md">
+        <div style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 0.5rem;">Average Session</div>
+        <div style="font-size: 1.75rem; font-weight: 700;">18m</div>
+        <div style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: 0.25rem;">Consistent for 3 months</div>
+      </div>
+      <div class="card p-md">
+        <div style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 0.5rem;">Sessions This Week</div>
+        <div style="font-size: 1.75rem; font-weight: 700;">5</div>
+        <div style="font-size: 0.75rem; color: #ef4444; margin-top: 0.25rem;">-1 from last week</div>
+      </div>
+      <div class="card p-md">
+        <div style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 0.5rem;">Zen Score</div>
+        <div style="font-size: 1.75rem; font-weight: 700;">92</div>
+        <div style="font-size: 0.75rem; color: var(--color-primary); margin-top: 0.25rem;">High peace state</div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-3 gap-lg">
+      <!-- Weekly Distribution -->
+      <div style="grid-column: span 2;" class="card">
+        <h3>Weekly Activity</h3>
+        <p style="font-size: 0.875rem;">Minutes meditated per day</p>
+        <div style="height: 250px; display: flex; align-items: flex-end; gap: 1rem; padding-top: 3rem; margin-top: 1rem;">
+          <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+            <span style="font-size: 0.7rem; font-weight: 600; color: var(--color-primary);">40m</span>
+            <div style="width: 100%; background: var(--color-primary); height: 80%; border-radius: 6px 6px 0 0; opacity: 0.7;"></div>
+            <span style="font-size: 0.75rem;">Mon</span>
+          </div>
+          <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+            <span style="font-size: 0.7rem; font-weight: 600; color: var(--color-primary);">30m</span>
+            <div style="width: 100%; background: var(--color-primary); height: 60%; border-radius: 6px 6px 0 0; opacity: 0.7;"></div>
+            <span style="font-size: 0.75rem;">Tue</span>
+          </div>
+          <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+            <span style="font-size: 0.7rem; font-weight: 600; color: var(--color-primary);">45m</span>
+            <div style="width: 100%; background: var(--color-primary); height: 90%; border-radius: 6px 6px 0 0; opacity: 0.7;"></div>
+            <span style="font-size: 0.75rem;">Wed</span>
+          </div>
+          <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+            <span style="font-size: 0.7rem; font-weight: 600; color: var(--color-primary);">20m</span>
+            <div style="width: 100%; background: var(--color-primary); height: 40%; border-radius: 6px 6px 0 0; opacity: 0.7;"></div>
+            <span style="font-size: 0.75rem;">Thu</span>
+          </div>
+          <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+            <span style="font-size: 0.7rem; font-weight: 900; color: var(--color-primary);">38m</span>
+            <div style="width: 100%; background: var(--color-primary); height: 75%; border-radius: 6px 6px 0 0; border: 2px solid var(--color-primary); box-shadow: 0 0 15px rgba(31, 77, 59, 0.2);"></div>
+            <span style="font-size: 0.75rem; font-weight: 700;">Fri</span>
+          </div>
+          <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+            <span style="font-size: 0.7rem; font-weight: 600; color: var(--color-primary);">15m</span>
+            <div style="width: 100%; background: var(--color-primary); height: 30%; border-radius: 6px 6px 0 0; opacity: 0.4;"></div>
+            <span style="font-size: 0.75rem;">Sat</span>
+          </div>
+          <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+            <span style="font-size: 0.7rem; font-weight: 600; color: var(--color-primary);">25m</span>
+            <div style="width: 100%; background: var(--color-primary); height: 50%; border-radius: 6px 6px 0 0; opacity: 0.4;"></div>
+            <span style="font-size: 0.75rem;">Sun</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Achievements -->
+      <div class="card">
+        <h3>Shared Milestones</h3>
+        <p style="font-size: 0.875rem;">Badges you've earned</p>
+        <div class="flex flex-col gap-sm" style="margin-top: 1.5rem;">
+          <div class="flex items-center gap-md" style="padding: 1rem; border-radius: var(--radius-md); background: var(--color-surface-alt); min-height: 72px;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background: #fcd34d; display: flex; align-items: center; justify-content: center; color: #92400e; flex-shrink: 0;">
+              <i data-lucide="award" style="width: 20px; height: 20px;"></i>
+            </div>
+            <div style="display: flex; flex-direction: column; justify-content: center;">
+              <div style="font-weight: 600; font-size: 0.9375rem; line-height: 1.2;">Early Bird</div>
+              <div style="font-size: 0.75rem; color: var(--color-text-muted);">10 morning sessions</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-md" style="padding: 1rem; border-radius: var(--radius-md); background: var(--color-surface-alt); min-height: 72px;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background: #93c5fd; display: flex; align-items: center; justify-content: center; color: #1e40af; flex-shrink: 0;">
+              <i data-lucide="wind" style="width: 20px; height: 20px;"></i>
+            </div>
+            <div style="display: flex; flex-direction: column; justify-content: center;">
+              <div style="font-weight: 600; font-size: 0.9375rem; line-height: 1.2;">Deep Breather</div>
+              <div style="font-size: 0.75rem; color: var(--color-text-muted);">Total 500 breath cycles</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-md" style="padding: 1rem; border-radius: var(--radius-md); background: var(--color-surface-alt); opacity: 0.4; filter: grayscale(1); min-height: 72px;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--color-border); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i data-lucide="lock" style="width: 18px; height: 18px;"></i>
+            </div>
+            <div style="display: flex; flex-direction: column; justify-content: center;">
+              <div style="font-weight: 600; font-size: 0.9375rem; line-height: 1.2;">Mindful Month</div>
+              <div style="font-size: 0.75rem; color: var(--color-text-muted);">Meditate 30 days straight</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

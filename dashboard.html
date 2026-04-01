@@ -35,22 +35,19 @@
     </div>
     
     <nav class="sidebar-nav">
-      <a href="#" class="sidebar-link active">
+      <a href="dashboard.html" class="sidebar-link active">
         <i data-lucide="home"></i> Home
       </a>
-      <a href="#" class="sidebar-link">
+      <a href="progress.html" class="sidebar-link">
         <i data-lucide="bar-chart-2"></i> My Progress
       </a>
-      <a href="services.html" class="sidebar-link">
-        <i data-lucide="video"></i> Live Sessions
-      </a>
-      <a href="#" class="sidebar-link">
+      <a href="streak.html" class="sidebar-link">
         <i data-lucide="flame"></i> Practice Streak
       </a>
-      <a href="#" class="sidebar-link">
+      <a href="notifications.html" class="sidebar-link">
         <i data-lucide="bell"></i> Notifications <span class="badge" style="margin: 0 0 0 auto; color: white; background: var(--color-primary); padding: 2px 8px; font-size: 0.75rem;">3</span>
       </a>
-      <a href="#" class="sidebar-link">
+      <a href="profile.html" class="sidebar-link">
         <i data-lucide="user"></i> Profile
       </a>
     </nav>
@@ -59,8 +56,11 @@
       <a href="index.html" class="sidebar-link" style="color: #ef4444;">
         <i data-lucide="log-out"></i> Logout
       </a>
-      <div style="margin-top: 1rem; text-align: center;">
-         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode" style="margin: 0 auto; background: var(--color-surface-alt);">
+      <div style="margin-top: 1rem; text-align: center; display: flex; justify-content: center; gap: 0.5rem;">
+         <button class="rtl-toggle" style="background: var(--color-surface-alt); border: none; padding: 0.5rem; border-radius: 4px; color: var(--color-text); cursor: pointer;" title="Toggle RTL">
+          <i data-lucide="languages" style="width: 20px;"></i>
+        </button>
+         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode" style="margin: 0; background: var(--color-surface-alt);">
           <i data-lucide="moon"></i>
         </button>
       </div>
@@ -81,8 +81,8 @@
           <div style="font-weight: 600; font-size: 1.125rem;">Jane Doe</div>
           <div style="font-size: 0.875rem; color: var(--color-primary);">Premium Member</div>
         </div>
-        <div style="width: 48px; height: 48px; border-radius: 50%; background-color: var(--color-surface-alt); display: flex; align-items: center; justify-content: center; overflow: hidden;">
-          <img src="assets/images/hero.png" alt="Profile" style="width: 100%; height: 100%; object-fit: cover;">
+        <div style="width: 48px; height: 48px; border-radius: 50%; background-color: var(--color-surface-alt); display: flex; align-items: center; justify-content: center; overflow: hidden; border: 2px solid var(--color-primary);">
+          <img src="assets/images/jane_doe.png" alt="Jane Doe Profile" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
       </div>
     </div>
@@ -143,7 +143,7 @@
         <div class="grid grid-cols-2">
           <div class="card p-0" style="overflow: hidden;">
             <div style="aspect-ratio: 16/9; background-color: #E6EFEC; position: relative;">
-               <img src="assets/images/card.png" alt="Morning Calm" style="width: 100%; height: 100%; object-fit: cover;">
+               <img src="assets/images/morning_energy.png" alt="Day 4: Grounding Breath" style="width: 100%; height: 100%; object-fit: cover;">
                <div style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.6); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem;">15:00</div>
             </div>
             <div style="padding: 1rem;">
@@ -156,7 +156,7 @@
           
           <div class="card p-0" style="overflow: hidden;">
             <div style="aspect-ratio: 16/9; background-color: #E6EFEC; position: relative;">
-               <img src="assets/images/hero.png" alt="Focus Series" style="width: 100%; height: 100%; object-fit: cover;">
+               <img src="assets/images/anxiety_relief.png" alt="Midday Focus Reset" style="width: 100%; height: 100%; object-fit: cover;">
                <div style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.6); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem;">10:00</div>
             </div>
             <div style="padding: 1rem;">

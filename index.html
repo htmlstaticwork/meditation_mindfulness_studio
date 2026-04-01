@@ -21,15 +21,22 @@
       </a>
       
       <nav class="nav-links" id="nav-links">
-        <a href="index.html" class="active">Home</a>
+        <div class="dropdown">
+          <a href="index.html" class="active flex items-center gap-sm">Home <i data-lucide="chevron-down" style="width: 14px; height: 14px; margin-top: 2px;"></i></a>
+          <div class="dropdown-content">
+            <a href="index.html">Home 1</a>
+            <a href="index-2.html">Home 2</a>
+          </div>
+        </div>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
         <a href="blog.html">Blog</a>
+        <a href="pricing.html">Pricing</a>
         <a href="contact.html">Contact</a>
         <a href="dashboard.html">Dashboard</a>
         
-        <div class="nav-actions mobile-visible">
-          <a href="login.html" class="btn btn-outline" style="margin-bottom: 0.5rem; width: 100%;">Login</a>
+        <div class="mobile-auth-links flex flex-col gap-sm" style="display: none; margin-top: var(--space-md); width: 100%;">
+          <a href="login.html" class="btn btn-outline" style="width: 100%;">Login</a>
           <a href="signup.html" class="btn btn-primary" style="width: 100%;">Sign Up</a>
         </div>
       </nav>
@@ -37,6 +44,12 @@
       <div class="nav-actions">
         <a href="login.html" class="btn btn-outline" style="padding: 0.5rem 1rem;">Login</a>
         <a href="signup.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Sign Up</a>
+      </div>
+
+      <div class="nav-controls">
+        <button class="rtl-toggle" style="background: var(--color-surface-alt); border: none; padding: 0.5rem; border-radius: 4px; color: var(--color-text); cursor: pointer;" title="Toggle RTL">
+          <i data-lucide="languages" style="width: 20px;"></i>
+        </button>
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
           <i data-lucide="moon"></i>
         </button>
@@ -49,28 +62,28 @@
 
   <main>
     <!-- Section 1: Hero -->
-    <section class="hero">
-      <img src="assets/images/hero.png" alt="Serene meditation studio" class="hero-bg">
+    <section class="hero" style="background: linear-gradient(rgba(18, 22, 20, 0.65), rgba(18, 22, 20, 0.65)), url('assets/images/hero_bg_1.png') center/cover no-repeat;">
       <div class="container relative z-10">
-        <div class="hero-content">
-          <div class="badge">Your Digital Sanctuary</div>
-          <h1>Find Your Inner Peace, Anywhere.</h1>
-          <p>Immerse yourself in premium online meditation sessions designed to relieve stress, build focus, and cultivate mindfulness in your daily life.</p>
-          <div class="flex gap-sm">
-            <a href="signup.html" class="btn btn-primary">Start Meditation</a>
-            <a href="services.html" class="btn btn-outline">Explore Sessions</a>
+        <div class="hero-content" style="max-width: 700px; text-align: center; margin: 0 auto;">
+          <div class="badge" style="background-color: rgba(255,255,255,0.25); color: white; backdrop-filter: blur(4px); padding: 0.5rem 1.25rem; font-size: 1rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 600;">Your Digital Sanctuary</div>
+          <h1 style="color: white;">Find Your Inner Peace, Anywhere.</h1>
+          <p style="color: rgba(255,255,255,0.9); font-size: 1.25rem;">Immerse yourself in premium online meditation sessions designed to relieve stress, build focus, and cultivate mindfulness in your daily life.</p>
+          <div class="flex gap-sm justify-center">
+            <a href="signup.html" class="btn btn-white">Start Meditation</a>
+            <a href="services.html" class="btn btn-outline" style="color: white; border-color: white;">Explore Sessions</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Section 2: Benefits of Meditation -->
-    <section class="container">
+    <section>
+      <div class="container">
       <div class="section-header">
         <h2>Transform Your Mind and Body</h2>
         <p>Consistent meditation practice brings profound changes to your well-being.</p>
       </div>
-      <div class="grid grid-cols-3">
+      <div class="grid grid-cols-3" style="margin-bottom: var(--space-lg);">
         <div class="card flex flex-col items-center" style="text-align: center;">
           <i data-lucide="brain" style="width: 48px; height: 48px; color: var(--color-primary); margin-bottom: 1rem;"></i>
           <h3>Reduce Stress</h3>
@@ -92,17 +105,15 @@
     <!-- Section 3: Guided Meditation Categories -->
     <section style="background-color: var(--color-surface-alt);">
       <div class="container">
-        <div class="flex justify-between items-center" style="margin-bottom: var(--space-lg);">
-          <div>
-            <h2>Guided Sessions for Every Need</h2>
-            <p style="margin-bottom: 0;">Explore our curated library tailored to your emotional state.</p>
-          </div>
+        <div class="section-header">
+          <h2>Guided Sessions for Every Need</h2>
+          <p>Explore our curated library tailored to your emotional state.</p>
         </div>
         
-        <div class="grid grid-cols-4">
+        <div class="grid grid-cols-4" style="margin-bottom: var(--space-lg);">
           <div class="card">
             <div class="card-img-wrap">
-              <img src="assets/images/card.png" alt="Anxiety Relief">
+              <img src="assets/images/anxiety_relief.png" alt="Anxiety Relief">
             </div>
             <h4>Anxiety Relief</h4>
             <p style="font-size: 0.875rem; margin-bottom: 1rem;">15 mins • Beginner</p>
@@ -110,7 +121,7 @@
           </div>
           <div class="card">
             <div class="card-img-wrap">
-              <img src="assets/images/card.png" alt="Deep Sleep">
+              <img src="assets/images/deep_sleep.png" alt="Deep Sleep">
             </div>
             <h4>Deep Sleep</h4>
             <p style="font-size: 0.875rem; margin-bottom: 1rem;">30 mins • All Levels</p>
@@ -118,7 +129,7 @@
           </div>
           <div class="card">
             <div class="card-img-wrap">
-              <img src="assets/images/card.png" alt="Morning Energy">
+              <img src="assets/images/morning_energy.png" alt="Morning Energy">
             </div>
             <h4>Morning Energy</h4>
             <p style="font-size: 0.875rem; margin-bottom: 1rem;">10 mins • Intermediate</p>
@@ -126,7 +137,7 @@
           </div>
           <div class="card">
             <div class="card-img-wrap">
-              <img src="assets/images/card.png" alt="Mindful Walking">
+              <img src="assets/images/mindful_walking.png" alt="Mindful Walking">
             </div>
             <h4>Mindful Walking</h4>
             <p style="font-size: 0.875rem; margin-bottom: 1rem;">20 mins • All Levels</p>
@@ -137,24 +148,25 @@
     </section>
 
     <!-- Section 4: How It Works -->
-    <section class="container">
+    <section>
+      <div class="container">
       <div class="section-header">
         <h2>Your Journey to Mindfulness</h2>
         <p>Getting started is simple, seamless, and completely tailored to your pace.</p>
       </div>
       
-      <div class="grid grid-cols-3">
-        <div style="text-align: center; position: relative;">
+      <div class="grid grid-cols-3" style="margin-bottom: var(--space-lg);">
+        <div class="card card-highlight" style="text-align: center; position: relative;">
           <div style="width: 60px; height: 60px; border-radius: 50%; background-color: var(--color-primary); color: var(--color-surface); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 600; margin: 0 auto 1.5rem;">1</div>
           <h3>Create Profile</h3>
           <p>Sign up to personalize your dashboard and track your meditation journey.</p>
         </div>
-        <div style="text-align: center; position: relative;">
+        <div class="card card-highlight" style="text-align: center; position: relative;">
           <div style="width: 60px; height: 60px; border-radius: 50%; background-color: var(--color-primary); color: var(--color-surface); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 600; margin: 0 auto 1.5rem;">2</div>
           <h3>Choose Session</h3>
           <p>Select from over 500+ guided audio and video meditations across various goals.</p>
         </div>
-        <div style="text-align: center; position: relative;">
+        <div class="card card-highlight" style="text-align: center; position: relative;">
           <div style="width: 60px; height: 60px; border-radius: 50%; background-color: var(--color-primary); color: var(--color-surface); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 600; margin: 0 auto 1.5rem;">3</div>
           <h3>Build the Habit</h3>
           <p>Use our streak tracker and gentle reminders to make mindfulness a daily ritual.</p>
@@ -171,8 +183,8 @@
         </div>
         
         <div class="grid grid-cols-2">
-          <div class="card" style="padding: var(--space-lg);">
-            <div class="flex gap-sm" style="color: #F59E0B; margin-bottom: 1rem;">
+          <div class="card" style="padding: var(--space-lg); text-align: center;">
+            <div class="flex gap-sm justify-center" style="color: #F59E0B; margin-bottom: 1rem;">
               <i data-lucide="star" style="fill: currentColor; width: 20px;"></i>
               <i data-lucide="star" style="fill: currentColor; width: 20px;"></i>
               <i data-lucide="star" style="fill: currentColor; width: 20px;"></i>
@@ -180,16 +192,16 @@
               <i data-lucide="star" style="fill: currentColor; width: 20px;"></i>
             </div>
             <p style="font-size: 1.25rem; font-style: italic; color: var(--color-text);">"This platform completely changed how I manage daily stress. The 10-minute morning sessions are a game-changer for my workday."</p>
-            <div class="flex items-center gap-sm" style="margin-top: 2rem;">
-              <div style="width: 48px; height: 48px; border-radius: 50%; background-color: var(--color-primary); display: flex; align-items: center; justify-content: center; color: white;">EL</div>
+            <div class="flex items-center gap-sm justify-center" style="margin-top: 2rem; text-align: left;">
+              <img src="assets/images/avatar_emma.png" alt="Emma L." style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
               <div>
                 <h4 style="margin-bottom: 0;">Emma L.</h4>
                 <p style="font-size: 0.875rem; margin-bottom: 0;">Member since 2024</p>
               </div>
             </div>
           </div>
-          <div class="card" style="padding: var(--space-lg);">
-            <div class="flex gap-sm" style="color: #F59E0B; margin-bottom: 1rem;">
+          <div class="card" style="padding: var(--space-lg); text-align: center;">
+            <div class="flex gap-sm justify-center" style="color: #F59E0B; margin-bottom: 1rem;">
               <i data-lucide="star" style="fill: currentColor; width: 20px;"></i>
               <i data-lucide="star" style="fill: currentColor; width: 20px;"></i>
               <i data-lucide="star" style="fill: currentColor; width: 20px;"></i>
@@ -197,8 +209,8 @@
               <i data-lucide="star" style="fill: currentColor; width: 20px;"></i>
             </div>
             <p style="font-size: 1.25rem; font-style: italic; color: var(--color-text);">"The interface is so calm and clean. Unlike other apps, it doesn't feel cluttered. It truly is a digital sanctuary for my mind."</p>
-            <div class="flex items-center gap-sm" style="margin-top: 2rem;">
-              <div style="width: 48px; height: 48px; border-radius: 50%; background-color: var(--color-primary); display: flex; align-items: center; justify-content: center; color: white;">MR</div>
+            <div class="flex items-center gap-sm justify-center" style="margin-top: 2rem; text-align: left;">
+              <img src="assets/images/avatar_michael.png" alt="Michael R." style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
               <div>
                 <h4 style="margin-bottom: 0;">Michael R.</h4>
                 <p style="font-size: 0.875rem; margin-bottom: 0;">Member since 2025</p>
@@ -209,40 +221,7 @@
       </div>
     </section>
 
-    <!-- Section 6: Pricing / Subscription -->
-    <section class="container" style="padding-bottom: var(--space-xl);">
-      <div class="section-header">
-        <h2>Invest in Your Well-being</h2>
-        <p>Simple, transparent pricing. Cancel anytime.</p>
-      </div>
-      
-      <div class="grid grid-cols-2" style="max-width: 900px; margin: 0 auto;">
-        <div class="card" style="padding: var(--space-lg); border: 2px solid var(--color-border);">
-          <h3>Monthly Plan</h3>
-          <div style="font-size: 3rem; font-weight: 700; color: var(--color-text); margin: 1rem 0;">$14<span style="font-size: 1.125rem; font-weight: 400; color: var(--color-text-muted);">/mo</span></div>
-          <p>Perfect for starting your journey.</p>
-          <ul style="margin: 2rem 0; display: flex; flex-direction: column; gap: 1rem;">
-            <li class="flex items-center gap-sm"><i data-lucide="check" style="color: var(--color-primary);"></i> Full library access</li>
-            <li class="flex items-center gap-sm"><i data-lucide="check" style="color: var(--color-primary);"></i> Daily mindfulness reminders</li>
-            <li class="flex items-center gap-sm"><i data-lucide="check" style="color: var(--color-primary);"></i> Progress tracking</li>
-          </ul>
-          <a href="signup.html" class="btn btn-outline" style="width: 100%;">Start Free Trial</a>
-        </div>
-        
-        <div class="card" style="padding: var(--space-lg); background-color: var(--color-primary); color: white; border: 2px solid var(--color-primary); position: relative;">
-          <div class="badge" style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background-color: #F59E0B; color: white;">Most Popular</div>
-          <h3 style="color: white;">Annual Plan</h3>
-          <div style="font-size: 3rem; font-weight: 700; margin: 1rem 0;">$120<span style="font-size: 1.125rem; font-weight: 400; opacity: 0.8;">/yr</span></div>
-          <p style="color: rgba(255,255,255,0.8);">Save $48 annually. Best value.</p>
-          <ul style="margin: 2rem 0; display: flex; flex-direction: column; gap: 1rem;">
-            <li class="flex items-center gap-sm"><i data-lucide="check" style="color: white;"></i> All Monthly features</li>
-            <li class="flex items-center gap-sm"><i data-lucide="check" style="color: white;"></i> 2 live sessions per month</li>
-            <li class="flex items-center gap-sm"><i data-lucide="check" style="color: white;"></i> Download for offline listening</li>
-          </ul>
-          <a href="signup.html" class="btn" style="width: 100%; background-color: var(--color-surface); color: var(--color-primary);">Start Free Trial</a>
-        </div>
-      </div>
-    </section>
+
   </main>
 
   <!-- Footer -->
@@ -255,6 +234,17 @@
             <span>Studio</span>
           </a>
           <p style="max-width: 300px;">Creating digital sanctuaries for mindful living. Find your peace in the present moment.</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 2-2 58.38 58.38 0 0 1 15 0 2 2 0 0 1 2 2 24.12 24.12 0 0 1 0 10 2 2 0 0 1-2 2 58.38 58.38 0 0 1-15 0 2 2 0 0 1-2-2z"></path><polyline points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polyline></svg>
+            </a>
+          </div>
         </div>
         
         <div>
@@ -278,16 +268,7 @@
         <div>
           <h4 class="footer-title">Newsletter</h4>
           <p style="font-size: 0.875rem;">Gentle reminders and wellness insights sent weekly.</p>
-          <form class="newsletter-form" onsubmit="event.preventDefault();">
-            <input type="email" placeholder="Email address" class="newsletter-input" required>
-            <button type="submit" class="btn btn-primary" aria-label="Subscribe"><i data-lucide="send" style="width: 16px; height: 16px;"></i></button>
           </form>
-          
-          <div class="social-icons">
-            <a href="#" aria-label="Instagram"><i data-lucide="instagram" style="width: 20px;"></i></a>
-            <a href="#" aria-label="Twitter"><i data-lucide="twitter" style="width: 20px;"></i></a>
-            <a href="#" aria-label="YouTube"><i data-lucide="youtube" style="width: 20px;"></i></a>
-          </div>
         </div>
       </div>
       
