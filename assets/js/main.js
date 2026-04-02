@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const trigger = dropdown.querySelector('a');
     if (trigger) {
       trigger.addEventListener('click', (e) => {
-        if (window.innerWidth <= 992) {
+        if (window.innerWidth <= 1024) {
           e.preventDefault();
           dropdown.classList.toggle('active');
           
