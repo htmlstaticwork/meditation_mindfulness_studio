@@ -38,6 +38,9 @@
           <a href="login.html" class="btn btn-outline" style="width: 100%;">Login</a>
           <a href="signup.html" class="btn btn-primary" style="width: 100%;">Sign Up</a>
         </div>
+        <div class="mobile-menu-footer" style="display: none; margin-top: 1rem; border-top: 1px solid var(--color-border); padding-top: 1rem;">
+          <button class="rtl-toggle btn btn-outline" style="width: 100%; font-size: 0.8125rem;">Switch RTL / LTR</button>
+        </div>
       </nav>
 
       <div class="nav-actions">
@@ -46,9 +49,7 @@
       </div>
 
       <div class="nav-controls">
-        <button class="rtl-toggle" style="background: var(--color-surface-alt); border: none; padding: 0.5rem; border-radius: 4px; color: var(--color-text); cursor: pointer;" title="Toggle RTL">
-          <i data-lucide="languages" style="width: 20px;"></i>
-        </button>
+        <button class="rtl-toggle btn btn-outline mobile-only-flex" style="padding: 0.25rem 0.5rem; font-size: 0.7rem; border-radius: 4px; display: none;">RTL</button>
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
           <i data-lucide="moon"></i>
         </button>
@@ -60,14 +61,16 @@
   </header>
 
   <main style="padding-top: 80px;">
-    <!-- Intro Header -->
-    <div class="container" style="text-align: center; padding: var(--space-xl) 0 var(--space-md);">
-      <h1 style="max-width: 800px; margin: 0 auto var(--space-sm);">The Mindful Journal</h1>
-      <p style="max-width: 600px; margin: 0 auto;">Explorations of consciousness, practical psychology, and the art of living fully in the present moment.</p>
-    </div>
+    <section style="text-align: center; padding: var(--space-xl) 0 var(--space-md);">
+      <div class="container">
+        <h1 style="max-width: 800px; margin: 0 auto var(--space-sm);">The Mindful Journal</h1>
+        <p style="max-width: 600px; margin: 0 auto;">Explorations of consciousness, practical psychology, and the art of living fully in the present moment.</p>
+      </div>
+    </section>
 
     <!-- Section 1: Mindfulness Articles -->
-    <section class="container" style="padding-bottom: var(--space-xl);">
+    <section style="padding-bottom: var(--space-xl);">
+      <div class="container">
 
       
       <div class="grid grid-cols-2 gap-lg">
@@ -99,11 +102,12 @@
           </div>
         </article>
       </div>
-    </section>
+    </div>
+  </section>
 
     <!-- Section 2: Meditation Techniques -->
-    <section style="background-color: var(--color-surface-alt);">
-      <div class="container" style="padding: var(--space-xl) 0;">
+    <section style="background-color: var(--color-surface-alt); padding: var(--space-xl) 0;">
+      <div class="container">
         <div class="section-header">
           <h2>Mastering Techniques</h2>
           <p>Step-by-step guides to various mindfulness modalities from around the world.</p>
@@ -139,7 +143,8 @@
     </section>
 
     <!-- Section 3: Stress Management Tips -->
-    <section class="container" style="padding: var(--space-xl) 0;">
+    <section style="padding: var(--space-xl) 0;">
+      <div class="container">
       <div class="grid grid-cols-2 items-center gap-lg">
         <div>
           <img src="assets/images/card.png" alt="Stress Management" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
@@ -165,7 +170,8 @@
           </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
     <!-- Section 4: Wellness Insights -->
     <section style="background-color: var(--color-primary); color: white; padding: var(--space-xl) 0;">
@@ -173,8 +179,8 @@
         <h2 style="color: white; margin-bottom: 1.5rem;">Holistic Wellness Insights</h2>
         <p style="max-width: 600px; margin: 0 auto 2.5rem; color: rgba(255,255,255,0.8); font-size: 1.125rem;">Subscribe to our weekly newsletter for curated essays on sleep hygiene, emotional intelligence, and living beautifully.</p>
         
-        <form class="flex justify-center gap-sm" style="max-width: 500px; margin: 0 auto;" onsubmit="event.preventDefault();">
-          <input type="email" placeholder="Enter your email address" style="flex: 1; padding: 1rem; border-radius: var(--radius-full); border: none; font-family: var(--font-base);" required>
+        <form class="newsletter-inline-form" onsubmit="event.preventDefault();">
+          <input type="email" placeholder="Enter your email address" required>
           <button type="submit" class="btn btn-white">Join 50k+ Readers</button>
         </form>
         <p style="font-size: 0.75rem; color: rgba(255,255,255,0.6); margin-top: 1rem;">No spam. Unsubscribe anytime.</p>

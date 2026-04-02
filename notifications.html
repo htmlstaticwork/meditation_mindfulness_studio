@@ -11,12 +11,22 @@
 </head>
 <body class="dashboard-layout">
 
-  <!-- Mobile Sidebar Toggle -->
-  <div style="position: fixed; top: 1rem; left: 1rem; z-index: 50; display: none;" class="mobile-only-btn">
-    <button id="sidebar-toggle" style="background: var(--color-surface); border: 1px solid var(--color-border); padding: 0.5rem; border-radius: 4px; color: var(--color-text);">
+  <!-- Dashboard Mobile Header -->
+  <header class="mobile-dashboard-header">
+    <button id="sidebar-toggle" style="background: none; border: none; padding: 0.5rem; color: var(--color-text); cursor: pointer;">
       <i data-lucide="menu"></i>
     </button>
-  </div>
+    <a href="index.html" class="logo" style="margin-left: 1rem;">
+      <i data-lucide="leaf"></i>
+      <span>Studio</span>
+    </a>
+    <div style="margin-left: auto; display: flex; gap: 0.5rem; align-items: center;">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+        <i data-lucide="moon"></i>
+      </button>
+      <button class="rtl-toggle btn btn-outline" style="padding: 0.25rem 0.5rem; font-size: 0.7rem; border-radius: 4px;">RTL</button>
+    </div>
+  </header>
   
   <!-- Sidebar -->
   <aside class="sidebar" id="sidebar">
@@ -49,14 +59,6 @@
       <a href="index.html" class="sidebar-link" style="color: #ef4444;">
         <i data-lucide="log-out"></i> Logout
       </a>
-      <div style="margin-top: 1rem; text-align: center; display: flex; justify-content: center; gap: 0.5rem;">
-         <button class="rtl-toggle" style="background: var(--color-surface-alt); border: none; padding: 0.5rem; border-radius: 4px; color: var(--color-text); cursor: pointer;" title="Toggle RTL">
-          <i data-lucide="languages" style="width: 20px;"></i>
-        </button>
-         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode" style="margin: 0; background: var(--color-surface-alt);">
-          <i data-lucide="moon"></i>
-        </button>
-      </div>
     </div>
   </aside>
 

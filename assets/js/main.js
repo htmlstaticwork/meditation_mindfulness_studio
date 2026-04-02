@@ -64,6 +64,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // --- Mobile Dropdown Implementation ---
+  const dropdowns = document.querySelectorAll('.dropdown');
+  dropdowns.forEach(dropdown => {
+    const trigger = dropdown.querySelector('a');
+    if (trigger) {
+      trigger.addEventListener('click', (e) => {
+        if (window.innerWidth <= 992) {
+          e.preventDefault();
+          dropdown.classList.toggle('active');
+          
+          // Rotate chevron if present
+          const chevron = trigger.querySelector('i[data-lucide="chevron-down"]');
+          if (chevron) {
+            chevron.style.transform = dropdown.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0)';
+          }
+        }
+      });
+    }
+  });
+
   // --- Sticky Header Optimization ---
   const header = document.querySelector('.header');
   if (header) {
@@ -88,6 +108,15 @@ document.addEventListener('DOMContentLoaded', () => {
   if (sidebarToggle && sidebar) {
     sidebarToggle.addEventListener('click', () => {
       sidebar.classList.toggle('open');
+      const icon = sidebarToggle.querySelector('i');
+      if (icon) {
+        if (sidebar.classList.contains('open')) {
+          icon.setAttribute('data-lucide', 'x');
+        } else {
+          icon.setAttribute('data-lucide', 'menu');
+        }
+        if(window.lucide) lucide.createIcons();
+      }
     });
   }
 

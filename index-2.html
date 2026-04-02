@@ -129,6 +129,9 @@
           <a href="login.html" class="btn btn-outline" style="color: white; border-color: white; width: 100%;">Login</a>
           <a href="signup.html" class="btn btn-white" style="width: 100%;">Sign Up</a>
         </div>
+        <div class="mobile-menu-footer" style="display: none; margin-top: 1rem; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1rem;">
+          <button class="rtl-toggle btn btn-outline" style="width: 100%; font-size: 0.8125rem; color: white; border-color: white;">Switch RTL / LTR</button>
+        </div>
       </nav>
 
       <div class="nav-actions">
@@ -137,9 +140,7 @@
       </div>
 
       <div class="nav-controls">
-        <button class="rtl-toggle" style="background: rgba(255,255,255,0.1); border: none; padding: 0.5rem; border-radius: 4px; color: white; cursor: pointer;" title="Toggle RTL">
-          <i data-lucide="languages" style="width: 20px;"></i>
-        </button>
+        <button class="rtl-toggle btn btn-outline mobile-only-flex" style="padding: 0.25rem 0.5rem; font-size: 0.7rem; border-radius: 4px; display: none; color: white; border-color: white;">RTL</button>
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode" style="color: white;">
           <i data-lucide="moon"></i>
         </button>

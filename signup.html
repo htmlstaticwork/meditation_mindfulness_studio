@@ -11,7 +11,13 @@
 </head>
 <body class="auth-layout" style="margin: 0;">
 
-  <div class="auth-card">
+  <div class="auth-card" style="position: relative;">
+    <div style="position: absolute; top: 1.25rem; right: 1.25rem; display: flex; gap: 0.5rem; align-items: center;">
+       <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode" style="background: var(--color-surface-alt); width: 32px; height: 32px; padding: 0;">
+        <i data-lucide="moon"></i>
+      </button>
+      <button class="rtl-toggle btn btn-outline" style="padding: 0.25rem 0.5rem; font-size: 0.65rem; border-radius: 4px;">RTL</button>
+    </div>
     <div class="auth-header">
       <a href="index.html" class="logo" style="justify-content: center; margin-bottom: 1rem;">
         <i data-lucide="leaf"></i>
@@ -67,17 +73,10 @@
       </button>
     </div>
 
-    <p style="text-align: center; margin-top: 1.5rem; font-size: 0.875rem; color: var(--color-text-muted);">
-      Already have an account? <a href="login.html" style="color: var(--color-primary); font-weight: 500;">Sign in</a>
-    </p>
-
-    <div style="text-align: center; margin-top: 1.5rem; display: flex; justify-content: center; gap: 0.5rem;">
-      <button class="rtl-toggle" style="background: var(--color-surface-alt); border: none; padding: 0.5rem; border-radius: 4px; color: var(--color-text); cursor: pointer;" title="Toggle RTL">
-        <i data-lucide="languages" style="width: 20px;"></i>
-      </button>
-      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode" style="margin: 0; background: var(--color-surface-alt);">
-        <i data-lucide="moon"></i>
-      </button>
+    <div style="margin-top: 2rem; text-align: center;">
+      <p style="font-size: 0.875rem; color: var(--color-text-muted);">
+        Already have an account? <a href="login.html" style="color: var(--color-primary); font-weight: 500;">Sign in</a>
+      </p>
     </div>
   </div>
 
