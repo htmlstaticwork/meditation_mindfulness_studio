@@ -152,6 +152,32 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', toggleRTL);
   });
 
+  // --- Scroll to Top Implementation ---
+  const scrollTopBtn = document.createElement('button');
+  scrollTopBtn.className = 'scroll-top-btn';
+  scrollTopBtn.setAttribute('aria-label', 'Scroll to top');
+  scrollTopBtn.innerHTML = '<i data-lucide="chevron-up"></i>';
+  document.body.appendChild(scrollTopBtn);
+
+  if (window.lucide) {
+    lucide.createIcons();
+  }
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      scrollTopBtn.classList.add('visible');
+    } else {
+      scrollTopBtn.classList.remove('visible');
+    }
+  });
+
+  scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
   // Initialize all Lucide icons
   if(window.lucide) {
     lucide.createIcons();

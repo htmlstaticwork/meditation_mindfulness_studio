@@ -46,6 +46,9 @@
       <div class="nav-actions">
         <a href="login.html" class="btn btn-outline" style="padding: 0.5rem 1rem;">Login</a>
         <a href="signup.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Sign Up</a>
+        <button class="rtl-toggle theme-toggle" aria-label="Toggle RTL/LTR" style="width: 32px; height: 32px; padding: 0; background: var(--color-surface-alt); border-radius: 50%; margin-left: 0.5rem;">
+          <i data-lucide="languages"></i>
+        </button>
       </div>
 
       <div class="nav-controls">
@@ -98,20 +101,20 @@
             <h2 style="margin-bottom: var(--space-md);">Live Studio Sessions</h2>
             <p>Experience the transformative energy of practicing together in real-time. Our global master instructors lead weekly live sessions spanning Vipassana, Zen, Yoga Nidra, and somatic healing practices.</p>
             <div class="card p-0" style="margin-top: 1.5rem;">
-              <div class="flex items-center justify-between" style="padding: 1rem; border-bottom: 1px solid var(--color-border);">
-                <div>
-                  <div style="font-weight: 500;">Morning Reset</div>
-                  <div style="font-size: 0.875rem; color: var(--color-text-muted);">Mondays, 8am EST</div>
-                </div>
-                <a href="#" style="color: var(--color-primary); font-size: 0.875rem; font-weight: 500;">RSVP</a>
-              </div>
-              <div class="flex items-center justify-between" style="padding: 1rem;">
-                <div>
-                  <div style="font-weight: 500;">Deep Rest Nidra</div>
-                  <div style="font-size: 0.875rem; color: var(--color-text-muted);">Thursdays, 9pm EST</div>
-                </div>
-                <a href="#" style="color: var(--color-primary); font-size: 0.875rem; font-weight: 500;">RSVP</a>
-              </div>
+               <div class="session-row" style="border-bottom: 1px solid var(--color-border);">
+                 <div>
+                   <div style="font-weight: 500;">Morning Reset</div>
+                   <div style="font-size: 0.875rem; color: var(--color-text-muted);">Mondays, 8am EST</div>
+                 </div>
+                 <a href="#" style="color: var(--color-primary); font-size: 0.875rem; font-weight: 500;">RSVP</a>
+               </div>
+               <div class="session-row">
+                 <div>
+                   <div style="font-weight: 500;">Deep Rest Nidra</div>
+                   <div style="font-size: 0.875rem; color: var(--color-text-muted);">Thursdays, 9pm EST</div>
+                 </div>
+                 <a href="#" style="color: var(--color-primary); font-size: 0.875rem; font-weight: 500;">RSVP</a>
+               </div>
             </div>
           </div>
           <div style="order: 1;">
@@ -130,29 +133,20 @@
       </div>
       
       <div class="grid grid-cols-3">
-        <div class="card flex flex-col items-center" style="text-align: center;">
-          <div style="width: 60px; height: 60px; border-radius: 50%; background-color: rgba(31, 77, 59, 0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
-            <i data-lucide="waves" style="color: var(--color-primary); width: 32px; height: 32px;"></i>
-          </div>
+        <div class="card card-bg" style="background-image: url('assets/images/panic_relief_bg.png');">
           <h3>Overcoming Panic</h3>
           <p>Learn breathwork techniques specifically tailored to halt rising panic and ground racing thoughts in the body.</p>
-          <a href="signup.html" style="color: var(--color-primary); font-weight: 500; margin-top: auto;">Start Program <i data-lucide="arrow-right" style="width: 16px; display: inline-block; vertical-align: middle;"></i></a>
+          <a href="signup.html" style="color: white; font-weight: 500; margin-top: 1rem; position: relative; z-index: 2;">Start Program <i data-lucide="arrow-right" style="width: 16px; display: inline-block; vertical-align: middle;"></i></a>
         </div>
-        <div class="card flex flex-col items-center" style="text-align: center;">
-           <div style="width: 60px; height: 60px; border-radius: 50%; background-color: rgba(31, 77, 59, 0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
-            <i data-lucide="heart-pulse" style="color: var(--color-primary); width: 32px; height: 32px;"></i>
-          </div>
+        <div class="card card-bg" style="background-image: url('assets/images/somatic_release_bg.png');">
           <h3>Somatic Release</h3>
           <p>A gentle approach to releasing chronic tension held deep in the body's fascia due to prolonged stress.</p>
-          <a href="signup.html" style="color: var(--color-primary); font-weight: 500; margin-top: auto;">Start Program <i data-lucide="arrow-right" style="width: 16px; display: inline-block; vertical-align: middle;"></i></a>
+          <a href="signup.html" style="color: white; font-weight: 500; margin-top: 1rem; position: relative; z-index: 2;">Start Program <i data-lucide="arrow-right" style="width: 16px; display: inline-block; vertical-align: middle;"></i></a>
         </div>
-        <div class="card flex flex-col items-center" style="text-align: center;">
-           <div style="width: 60px; height: 60px; border-radius: 50%; background-color: rgba(31, 77, 59, 0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
-            <i data-lucide="moon-star" style="color: var(--color-primary); width: 32px; height: 32px;"></i>
-          </div>
+        <div class="card card-bg" style="background-image: url('assets/images/insomnia_relief_bg.png');">
           <h3>Insomnia Relief</h3>
           <p>Rewire your brain's relationship with sleep through progressive muscle relaxation and cognitive defusion.</p>
-          <a href="signup.html" style="color: var(--color-primary); font-weight: 500; margin-top: auto;">Start Program <i data-lucide="arrow-right" style="width: 16px; display: inline-block; vertical-align: middle;"></i></a>
+          <a href="signup.html" style="color: white; font-weight: 500; margin-top: 1rem; position: relative; z-index: 2;">Start Program <i data-lucide="arrow-right" style="width: 16px; display: inline-block; vertical-align: middle;"></i></a>
         </div>
         </div>
       </div>
@@ -165,20 +159,17 @@
         <p style="max-width: 700px; margin: 0 auto 2.5rem; color: rgba(255,255,255,0.8); font-size: 1.125rem;">Boost employee well-being, reduce burnout, and foster a culture of focused calm with our enterprise solutions.</p>
         
         <div class="grid grid-cols-3" style="margin-bottom: 3rem; text-align: left;">
-          <div class="card-tertiary">
-            <i data-lucide="users" style="width: 32px; height: 32px; margin-bottom: 1rem; color: white;"></i>
-            <h4 style="color: white;">Team Workshops</h4>
-            <p style="margin-bottom: 0; font-size: 0.875rem; color: rgba(255,255,255,0.8);">Live interactive sessions focused on resilience and emotional intelligence.</p>
+          <div class="card card-bg" style="background-image: url('assets/images/team_workshops_bg.png'); min-height: 240px;">
+            <h4>Team Workshops</h4>
+            <p>Live interactive sessions focused on resilience and emotional intelligence.</p>
           </div>
-          <div class="card-tertiary">
-            <i data-lucide="smartphone" style="width: 32px; height: 32px; margin-bottom: 1rem; color: white;"></i>
-            <h4 style="color: white;">App Access</h4>
-            <p style="margin-bottom: 0; font-size: 0.875rem; color: rgba(255,255,255,0.8);">Provide full premium app access to every member of your organization.</p>
+          <div class="card card-bg" style="background-image: url('assets/images/app_access_bg.png'); min-height: 240px;">
+            <h4>App Access</h4>
+            <p>Provide full premium app access to every member of your organization.</p>
           </div>
-          <div class="card-tertiary">
-            <i data-lucide="bar-chart" style="width: 32px; height: 32px; margin-bottom: 1rem; color: white;"></i>
-            <h4 style="color: white;">Engagement Metrics</h4>
-            <p style="margin-bottom: 0; font-size: 0.875rem; color: rgba(255,255,255,0.8);">Anonymous dashboards to track overall program adoption and impact.</p>
+          <div class="card card-bg" style="background-image: url('assets/images/engagement_metrics_bg.png'); min-height: 240px;">
+            <h4>Engagement Metrics</h4>
+            <p>Anonymous dashboards to track overall program adoption and impact.</p>
           </div>
         </div>
         

@@ -24,7 +24,9 @@
       <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
         <i data-lucide="moon"></i>
       </button>
-      <button class="rtl-toggle btn btn-outline" style="padding: 0.25rem 0.5rem; font-size: 0.7rem; border-radius: 4px;">RTL</button>
+      <button class="rtl-toggle theme-toggle" aria-label="Toggle RTL/LTR">
+        <i data-lucide="languages"></i>
+      </button>
     </div>
   </header>
   
@@ -65,7 +67,7 @@
   <!-- Main Content -->
   <main class="dashboard-main">
     
-    <div class="flex justify-between items-center" style="margin-bottom: var(--space-lg);">
+    <div class="notifications-header flex justify-between items-center" style="margin-bottom: var(--space-lg);">
       <div>
         <h1>Inbox</h1>
         <p>Your sanctuary for studio updates and achievements.</p>
@@ -77,7 +79,7 @@
     <div class="flex flex-col gap-sm">
       
       <!-- New Notification Card -->
-      <div class="card" style="padding: 1.5rem; display: flex; justify-content: space-between; align-items: flex-start;">
+      <div class="card notification-card" style="padding: 1.5rem; display: flex; justify-content: space-between; align-items: flex-start;">
         <div class="flex gap-md">
           <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(31, 77, 59, 0.1); display: flex; align-items: center; justify-content: center; color: var(--color-primary); flex-shrink: 0;">
             <i data-lucide="calendar"></i>
@@ -91,7 +93,7 @@
         <button class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.8125rem;">Join Waitlist</button>
       </div>
 
-      <div class="card" style="padding: 1.5rem; display: flex; justify-content: space-between; align-items: flex-start;">
+      <div class="card notification-card" style="padding: 1.5rem; display: flex; justify-content: space-between; align-items: flex-start;">
         <div class="flex gap-md">
           <div style="width: 48px; height: 48px; border-radius: 50%; background: #93c5fd; display: flex; align-items: center; justify-content: center; color: #1e40af; flex-shrink: 0;">
             <i data-lucide="award"></i>
@@ -105,7 +107,7 @@
         <button class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.8125rem;">Share</button>
       </div>
 
-      <div class="card" style="padding: 1.5rem; display: flex; justify-content: space-between; align-items: flex-start;">
+      <div class="card notification-card" style="padding: 1.5rem; display: flex; justify-content: space-between; align-items: flex-start;">
         <div class="flex gap-md">
           <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(31, 77, 59, 0.1); display: flex; align-items: center; justify-content: center; color: var(--color-primary); flex-shrink: 0;">
             <i data-lucide="info"></i>
@@ -120,7 +122,7 @@
       </div>
 
       <!-- Read Notification -->
-      <div class="card" style="opacity: 0.75; padding: 1.5rem; display: flex; justify-content: space-between; align-items: flex-start;">
+      <div class="card notification-card" style="opacity: 0.75; padding: 1.5rem; display: flex; justify-content: space-between; align-items: flex-start;">
         <div class="flex gap-md">
           <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--color-surface-alt); display: flex; align-items: center; justify-content: center; color: var(--color-text-muted); flex-shrink: 0;">
             <i data-lucide="message-square"></i>
