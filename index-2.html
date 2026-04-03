@@ -112,10 +112,10 @@
       
       <nav class="nav-links" id="nav-links">
         <div class="dropdown">
-          <a href="index.html" class="flex items-center gap-sm" style="color: white;">Home <i data-lucide="chevron-down" style="width: 14px; height: 14px; margin-top: 2px;"></i></a>
+          <a href="index.html" class="active flex items-center gap-sm" style="color: white;">Home <i data-lucide="chevron-down" style="width: 14px; height: 14px; margin-top: 2px;"></i></a>
           <div class="dropdown-content">
             <a href="index.html">Home 1</a>
-            <a href="index-2.html">Home 2</a>
+            <a href="index-2.html" class="active">Home 2</a>
           </div>
         </div>
         <a href="about.html" style="color: white;">About</a>
@@ -134,22 +134,24 @@
         </div>
       </nav>
 
-      <div class="nav-actions">
-        <a href="login.html" class="btn btn-outline" style="color: white; border-color: white; padding: 0.5rem 1rem;">Login</a>
-        <a href="signup.html" class="btn btn-white" style="padding: 0.5rem 1rem;">Sign Up</a>
-        <button class="rtl-toggle theme-toggle" aria-label="Toggle RTL/LTR" style="width: 32px; height: 32px; padding: 0; background: rgba(255,255,255,0.1); border-radius: 50%; color: white; margin-left: 0.5rem;">
-          <i data-lucide="languages"></i>
-        </button>
-      </div>
+      <div class="nav-right">
+        <div class="nav-actions">
+          <a href="login.html" class="btn btn-outline" style="color: white; border-color: white; padding: 0.5rem 1rem;">Login</a>
+          <a href="signup.html" class="btn btn-white" style="padding: 0.5rem 1rem;">Sign Up</a>
+          <button class="rtl-toggle theme-toggle" aria-label="Toggle RTL/LTR" style="width: 32px; height: 32px; padding: 0; background: rgba(255,255,255,0.1); border-radius: 50%; color: white; margin-left: 0.5rem;">
+            <i data-lucide="languages"></i>
+          </button>
+        </div>
 
-      <div class="nav-controls">
-        <button class="rtl-toggle btn btn-outline mobile-only-flex" style="padding: 0.25rem 0.5rem; font-size: 0.7rem; border-radius: 4px; display: none; color: white; border-color: white;">RTL</button>
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode" style="color: white;">
-          <i data-lucide="moon"></i>
-        </button>
-        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Menu" style="color: white;">
-          <i data-lucide="menu"></i>
-        </button>
+        <div class="nav-controls">
+          <button class="rtl-toggle btn btn-outline mobile-only-flex" style="padding: 0.25rem 0.5rem; font-size: 0.7rem; border-radius: 4px; display: none; color: white; border-color: white;">RTL</button>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode" style="color: white;">
+            <i data-lucide="moon"></i>
+          </button>
+          <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Menu" style="color: white;">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
       </div>
     </div>
   </header>

@@ -24,7 +24,7 @@
         <div class="dropdown">
           <a href="index.html" class="active flex items-center gap-sm">Home <i data-lucide="chevron-down" style="width: 14px; height: 14px; margin-top: 2px;"></i></a>
           <div class="dropdown-content">
-            <a href="index.html">Home 1</a>
+            <a href="index.html" class="active">Home 1</a>
             <a href="index-2.html">Home 2</a>
           </div>
         </div>
@@ -44,22 +44,24 @@
         </div>
       </nav>
 
-      <div class="nav-actions">
-        <a href="login.html" class="btn btn-outline" style="padding: 0.5rem 1rem;">Login</a>
-        <a href="signup.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Sign Up</a>
-        <button class="rtl-toggle theme-toggle" aria-label="Toggle RTL/LTR" style="width: 32px; height: 32px; padding: 0; background: var(--color-surface-alt); border-radius: 50%; margin-left: 0.5rem;">
-          <i data-lucide="languages"></i>
-        </button>
-      </div>
+      <div class="nav-right">
+        <div class="nav-actions">
+          <a href="login.html" class="btn btn-outline" style="padding: 0.5rem 1rem;">Login</a>
+          <a href="signup.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Sign Up</a>
+          <button class="rtl-toggle theme-toggle" aria-label="Toggle RTL/LTR" style="width: 32px; height: 32px; padding: 0; background: var(--color-surface-alt); border-radius: 50%; margin-left: 0.5rem;">
+            <i data-lucide="languages"></i>
+          </button>
+        </div>
 
-      <div class="nav-controls">
-        <button class="rtl-toggle btn btn-outline mobile-only-flex" style="padding: 0.25rem 0.5rem; font-size: 0.7rem; border-radius: 4px; display: none;">RTL</button>
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
-          <i data-lucide="moon"></i>
-        </button>
-        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Menu">
-          <i data-lucide="menu"></i>
-        </button>
+        <div class="nav-controls">
+          <button class="rtl-toggle btn btn-outline mobile-only-flex" style="padding: 0.25rem 0.5rem; font-size: 0.7rem; border-radius: 4px; display: none;">RTL</button>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+            <i data-lucide="moon"></i>
+          </button>
+          <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Menu">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
       </div>
     </div>
   </header>

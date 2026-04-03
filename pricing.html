@@ -43,7 +43,7 @@
         </div>
       </nav>
 
-      <div class="nav-actions">
+      <div class="nav-right"><div class="nav-actions">
         <a href="login.html" class="btn btn-outline" style="padding: 0.5rem 1rem;">Login</a>
         <a href="signup.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Sign Up</a>
         <button class="rtl-toggle theme-toggle" aria-label="Toggle RTL/LTR" style="width: 32px; height: 32px; padding: 0; background: var(--color-surface-alt); border-radius: 50%; margin-left: 0.5rem;">
@@ -59,7 +59,7 @@
         <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Menu">
           <i data-lucide="menu"></i>
         </button>
-      </div>
+      </div></div>
     </div>
   </header>
 
@@ -161,22 +161,53 @@
         <p style="margin: 0 auto; max-width: 600px;">Everything you need to know about Serenity memberships and billing.</p>
       </div>
 
-      <div class="faq-grid">
-        <div class="faq-card">
-          <h4>Can I cancel my subscription at any time?</h4>
-          <p>Absolutely. You can cancel your subscription at any point from your account dashboard. You'll retain all membership benefits until the end of your current billing period.</p>
+      <div class="faq-accordion" style="max-width: 800px; margin: 0 auto;">
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <h4>Can I cancel my subscription at any time?</h4>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              <p>Absolutely. You can cancel your subscription at any point from your account dashboard. You'll retain all membership benefits until the end of your current billing period.</p>
+            </div>
+          </div>
         </div>
-        <div class="faq-card">
-          <h4>Do you offer a student or educator discount?</h4>
-          <p>Yes we do! We're proud to support the educational community with 30% off our Annual Plan. Simply email us at hello@serenitystudio.com with your institution credentials to get started.</p>
+        
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <h4>Do you offer a student or educator discount?</h4>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              <p>Yes we do! We're proud to support the educational community with 30% off our Annual Plan. Simply email us at hello@serenitystudio.com with your institution credentials to get started.</p>
+            </div>
+          </div>
         </div>
-        <div class="faq-card">
-          <h4>Can I upgrade from Monthly to Annual later?</h4>
-          <p>Of course. You can switch plans at any time through your settings. When you upgrade, we'll pro-rate your remaining monthly balance and apply it to your new annual subscription.</p>
+        
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <h4>Can I upgrade from Monthly to Annual later?</h4>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              <p>Of course. You can switch plans at any time through your settings. When you upgrade, we'll pro-rate your remaining monthly balance and apply it to your new annual subscription.</p>
+            </div>
+          </div>
         </div>
-        <div class="faq-card">
-          <h4>What happens after my 14-day free trial?</h4>
-          <p>If you choose not to cancel, your membership will automatically transition to your selected paid plan. We'll send you a courtesy reminder email 48 hours before your trial expires.</p>
+        
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <h4>What happens after my 14-day free trial?</h4>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              <p>If you choose not to cancel, your membership will automatically transition to your selected paid plan. We'll send you a courtesy reminder email 48 hours before your trial expires.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -241,3 +272,4 @@
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+

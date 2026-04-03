@@ -178,6 +178,43 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // --- FAQ Accordion Implementation ---
+  document.querySelectorAll('.faq-trigger').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const item = trigger.closest('.faq-item');
+      const isActive = item.classList.contains('active');
+      
+      // Close other items
+      document.querySelectorAll('.faq-item').forEach(otherItem => {
+        otherItem.classList.remove('active');
+      });
+      
+      // Toggle current item
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    });
+  });
+
+  // --- Password Toggle Implementation ---
+  document.querySelectorAll('.password-toggle').forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const input = toggle.closest('.form-password-wrapper').querySelector('input');
+      const icon = toggle.querySelector('i');
+      
+      const isPassword = input.type === 'password';
+      input.type = isPassword ? 'text' : 'password';
+      
+      // Toggle eye icon
+      if (icon) {
+        icon.setAttribute('data-lucide', isPassword ? 'eye-off' : 'eye');
+        if (window.lucide) {
+          lucide.createIcons();
+        }
+      }
+    });
+  });
+
   // Initialize all Lucide icons
   if(window.lucide) {
     lucide.createIcons();
