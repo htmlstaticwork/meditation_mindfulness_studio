@@ -1666,21 +1666,9 @@ section {
   margin-right: 0;
 }
 
-[dir="rtl"] .nav-container {
-  flex-direction: row-reverse;
-}
-
 [dir="rtl"] .mobile-menu-btn {
   margin-left: 0;
   margin-right: auto;
-}
-
-[dir="rtl"] .nav-actions {
-  flex-direction: row-reverse;
-}
-
-[dir="rtl"] .mobile-dashboard-header {
-  flex-direction: row-reverse;
 }
 
 [dir="rtl"] #sidebar-toggle {
