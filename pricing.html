@@ -47,7 +47,7 @@
         <a href="login.html" class="btn btn-outline" style="padding: 0.5rem 1rem;">Login</a>
         <a href="signup.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Sign Up</a>
         <button class="rtl-toggle theme-toggle" aria-label="Toggle RTL/LTR" style="width: 32px; height: 32px; padding: 0; background: var(--color-surface-alt); border-radius: 50%; margin-left: 0.5rem;">
-          <i data-lucide="languages"></i>
+          <i data-lucide="arrow-right-left"></i>
         </button>
       </div>
 
@@ -64,15 +64,20 @@
   </header>
 
   <main style="padding-top: 80px;">
-    <!-- Intro Header -->
-    <div class="container" style="text-align: center; padding: var(--space-xl) 0 var(--space-md);">
-      <h1 style="max-width: 800px; margin: 0 auto var(--space-sm);">Invest in Your Mind</h1>
-      <p style="max-width: 600px; margin: 0 auto;">Transparent pricing for unlimited peace. All plans come with a risk-free 14-day trial.</p>
-    </div>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero-bg" style="background-image: url('assets/images/pricing_hero.png');"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <h1>Invest in Your Mind</h1>
+        <p>Transparent pricing for unlimited peace. All plans come with a risk-free 14-day trial.</p>
+      </div>
+    </section>
 
     <!-- Section: Pricing / Subscription -->
-    <section class="container" style="padding-bottom: var(--space-xl);">
-      <div class="grid grid-cols-2" style="max-width: 1000px; margin: 0 auto; gap: var(--space-lg);">
+    <section style="padding: var(--space-xl) 0;">
+      <div class="container">
+        <div class="grid grid-cols-2" style="max-width: 1000px; margin: 0 auto; gap: var(--space-lg);">
         <div class="card text-center" style="padding: var(--space-lg); border: 2px solid var(--color-border); display: flex; flex-direction: column; height: 100%;">
           <h3>Monthly Plan</h3>
           <div style="font-size: 3.5rem; font-weight: 700; color: var(--color-text); margin: 1.5rem 0;">$14<span style="font-size: 1.125rem; font-weight: 400; color: var(--color-text-muted);">/mo</span></div>

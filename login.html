@@ -11,15 +11,16 @@
 </head>
 <body class="auth-layout" style="margin: 0;">
 
-  <div class="auth-card" style="position: relative;">
-    <div style="position: absolute; top: 1.25rem; right: 1.25rem; display: flex; gap: 0.5rem; align-items: center;">
-       <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode" style="background: var(--color-surface-alt); width: 32px; height: 32px; padding: 0;">
-        <i data-lucide="moon"></i>
-      </button>
-      <button class="rtl-toggle theme-toggle" aria-label="Toggle RTL/LTR" style="background: var(--color-surface-alt); width: 32px; height: 32px; padding: 0;">
-        <i data-lucide="languages"></i>
-      </button>
-    </div>
+  <div class="auth-toggles">
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+      <i data-lucide="moon"></i>
+    </button>
+    <button class="rtl-toggle theme-toggle" aria-label="Toggle RTL/LTR">
+      <i data-lucide="arrow-right-left"></i>
+    </button>
+  </div>
+
+  <div class="auth-card">
     <div class="auth-header">
       <a href="index.html" class="logo" style="justify-content: center; margin-bottom: 1rem;">
         <i data-lucide="leaf"></i>
@@ -67,11 +68,9 @@
         </svg>
         Google
       </button>
-      <button type="button" class="social-btn">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16.1 7.42c-.05-.07-.12-.11-.2-.11h-1.63c-.09 0-.17.06-.19.14l-1.87 5.76h-.06l-1.89-5.76C10.23 7.37 10.15 7.31 10.06 7.31H8.43c-.08 0-.15.04-.2.11s-.06.15-.02.2l3 7.82V20c0 .11.09.2.2.2h1.36c.11 0 .2-.09.2-.2v-4.57l2.97-7.82c.03-.04.02-.12-.02-.2z"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm0-18c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8z"/>
-          <path d="M12 1.3C6.09 1.3 1.3 6.09 1.3 12S6.09 22.7 12 22.7 22.7 17.91 22.7 12 17.91 1.3 12 1.3zM12 21c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"/>
+      <button type="button" class="social-btn apple">
+        <svg width="20" height="20" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+          <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
         </svg>
         Apple
       </button>
