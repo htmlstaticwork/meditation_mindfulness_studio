@@ -122,11 +122,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- RTL Toggle Implementation ---
   const rtlToggles = document.querySelectorAll('.rtl-toggle');
-  const initRTL = () => {
-    const storedRTL = localStorage.getItem('rtl') === 'true';
-    if (storedRTL) {
-      document.documentElement.setAttribute('dir', 'rtl');
+  
+  const updateRTLUI = (isRTL) => {
+    rtlToggles.forEach(btn => {
+      if (isRTL) {
+        btn.classList.add('active');
+        if (btn.tagName === 'BUTTON' && btn.innerText === 'RTL') {
+          btn.innerText = 'LTR';
+        }
+      } else {
+        btn.classList.remove('active');
+        if (btn.tagName === 'BUTTON' && btn.innerText === 'LTR') {
+          btn.innerText = 'RTL';
+        }
+      }
+    });
+    
+    // Refresh icons to ensure flipping logic applies
+    if (window.lucide) {
+      lucide.createIcons();
     }
+  };
+
+  const initRTL = () => {
+    const isRTL = localStorage.getItem('rtl') === 'true';
+    if (isRTL) {
+      document.documentElement.setAttribute('dir', 'rtl');
+      document.documentElement.classList.add('rtl-active');
+    }
+    updateRTLUI(isRTL);
   };
 
   const toggleRTL = () => {
@@ -135,16 +159,14 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (nextRTL) {
       document.documentElement.setAttribute('dir', 'rtl');
+      document.documentElement.classList.add('rtl-active');
     } else {
       document.documentElement.removeAttribute('dir');
+      document.documentElement.classList.remove('rtl-active');
     }
     
     localStorage.setItem('rtl', nextRTL);
-    
-    // Refresh icons to ensure flipping logic applies
-    if (window.lucide) {
-      lucide.createIcons();
-    }
+    updateRTLUI(nextRTL);
   };
 
   initRTL();
